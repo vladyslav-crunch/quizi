@@ -1,0 +1,477 @@
+{
+  "network-security-kolos": {
+    "title": "Bezpieczeństwo Sieci - Kolokwium",
+    "questions": [
+      {
+        "question": "Z powodu wdrożonych kontroli bezpieczeństwa użytkownik może uzyskać dostęp tylko do serwera z FTP. Który komponent AAA to zapewni?",
+        "multipleAnswers": false,
+        "options": ["dostępność", "niezawodność", "ewidencjonowanie", "autoryzacja", "audyt", "uwierzytelnianie"],
+        "answer": "autoryzacja"
+      },
+      {
+        "question": "Administrator sieci konfiguruje zabezpieczenia portu na przełączniku. Polityka bezpieczeństwa firmy określa, że w przypadku naruszenia należy odrzucać pakiety o nieznanych adresach źródłowych i nie wysyłać żadnych powiadomień. Który tryb naruszenia powinien być skonfigurowany na interfejsach?",
+        "multipleAnswers": false,
+        "options": ["off", "restrict", "protect", "shutdown"],
+        "answer": "protect"
+      },
+      {
+        "question": "Które trzy typy widoków są dostępne podczas konfigurowania funkcji dostępu CLI opartego na rolach? ",
+        "multipleAnswers": true,
+        "options": ["superview", "admin view", "root view", "superuser view", "CLI view", "config view"],
+        "answer": ["superview", "root view", "CLI view"]
+      },
+      {
+        "question": "Ze względów bezpieczeństwa administrator sieci musi zagwarantować, że lokalne komputery nie mogą komunikować się ze sobą za pomocą pakietów ping. Które ustawienia pomogą wykonać to zadanie? ",
+        "multipleAnswers": false,
+        "options": ["ustawienia systemu plików", "ustawienia interfejsów", "ustawienia adresów MAC", "ustawienia zapory", "ustawienia AAA"],
+        "answer": "ustawienia zapory"
+      },
+      {
+        "question": "Spójrz na rysunek. Port Fa0/2 został już prawidłowo skonfigurowany. Telefon IP i komputer PC działają prawidłowo. Która z wymienionych konfiguracji portu Fa0/2 przełącznika będzie najbardziej odpowiednia dla administratora sieci aby spełnić następujące cele?\n\n* Nikt nie może odłączyć telefonu IP ani komputera PC lub podłączyć inne przewodowe urządzenia.\n* Jeśli inne urządzenie zostało podłączone, to port Fa0/2 powinien zostać wyłączony.\n* Adresy MAC telefonu IP i komputera powinny zostać automatycznie wykryte przez przełącznik i dodane do bieżącej konfiguracji.",
+        "multipleAnswers": false,
+        "imageUrl": "https://i.ibb.co/1YF6zT6Z/Port-Fa.png",
+        "options": [
+          "SWA(config-if)# switchport port-security \nSWA(config-if)# switchport port-security mac-address sticky",
+          "SWA(config-if)# switchport port-security mac-address sticky \nSWA(config-if)# switchport port-security maximum 2",
+          "SWA(config-if)# switchport port-security \nSWA(config-if)# switchport port-security maximum 2 \nSWA(config-if)# switchport port-security mac-address sticky",
+          "SWA(config-if)# switchport port-security \nSWA(config-if)# switchport port-security maximum 2 \nSWA(config-if)# switchport port-security mac-address sticky \nSWA(config-if)# switchport port-security violation restrict"
+        ],
+        "answer": [
+          "SWA(config-if)# switchport port-security \nSWA(config-if)# switchport port-security maximum 2 \nSWA(config-if)# switchport port-security mac-address sticky"
+        ]
+      },
+      {
+        "question": "Które trzy stwierdzenia opisują ograniczenia w korzystaniu z poziomów uprawnień do przypisywania autoryzacji poleceń?",
+        "multipleAnswers": true,
+        "options": [
+          "Utworzenie konta użytkownika wymagającego dostępu do większości, ale nie wszystkich poleceń, może być żmudnym procesem.",
+          "Widoki są niezbędne do zdefiniowania poleceń CLI, do których każdy użytkownik może uzyskać dostęp.",
+          "Polecenia ustawione na wyższym poziomie uprawnień nie są dostępne dla użytkowników o niższych uprawnieniach.",
+          "Wymagane jest zdefiniowanie wszystkich 16 poziomów uprawnień, niezależnie od tego, czy są używane, czy nie.",
+          "Nie ma kontroli dostępu do konkretnych interfejsów na routerze.",
+          "Użytkownikowi root należy przypisać każdy zdefiniowany poziom uprawnień"
+        ],
+        "answer": [
+          "Utworzenie konta użytkownika wymagającego dostępu do większości, ale nie wszystkich poleceń, może być żmudnym procesem.",
+          "Polecenia ustawione na wyższym poziomie uprawnień nie są dostępne dla użytkowników o niższych uprawnieniach.",
+          "Nie ma kontroli dostępu do konkretnych interfejsów na routerze."
+        ]
+      },
+      {
+        "question": "Jakie są trzy techniki ograniczania ataków VLAN?",
+        "multipleAnswers": true,
+        "options": [
+          "Wyłączyć DTP.",
+          "Włącz trunki ręcznie.",
+          "Zmień VLAN natywny na nieużywany.",
+          "Włącz BPDU guard.",
+          "Włącz Source guard.",
+          "Używaj prywatnych sieci VLAN."
+        ],
+        "answer": [
+          "Wyłączyć DTP.",
+          "Włącz trunki ręcznie.",
+          "Zmień VLAN natywny na nieużywany."
+        ]
+      },
+      {
+        "question": "Które dwa rozwiązania Cisco pomagają zapobiegać atakom zagłodzenia DHCP?",
+        "multipleAnswers": true,
+        "options": [
+          "Zabezpieczenie portu",
+          "IP Source Guard",
+          "DHCP Snooping",
+          "Web Security",
+          "Dynamiczna inspekcja ARP"
+        ],
+        "answer": [
+          "Zabezpieczenie portu",
+          "DHCP Snooping"
+        ]
+      },
+      {
+        "question": "Jeśli chodzi o bezpieczeństwo, która warstwa OSI jest uważana za najsłabsze ogniwo w systemie sieciowym?",
+        "multipleAnswers": false,
+        "options": [
+          "warstwa 1",
+          "warstwa 2",
+          "warstwa 3",
+          "warstwa 4",
+          "warstwa 5",
+          "warstwa 6",
+          "warstwa 7"
+        ],
+        "answer": [
+          "warstwa 2"
+        ]
+      },
+      {
+        "question": "Jakie korzyści w zakresie bezpieczeństwa daje włączenie BPDU guard na interfejsach obsługujących PortFast?",
+        "multipleAnswers": false,
+        "options": [
+          "zapobieganie dodaniu obcych przełączników do sieci",
+          "ochrona przed pętlami warstwy 2",
+          "egzekwowanie lokalizacji mostów głównych",
+          "zapobieganie atakom przepełnienia bufora",
+          "Opcja 2"
+        ],
+        "answer": [
+          "zapobieganie dodaniu obcych przełączników do sieci"
+        ]
+      },
+      {
+        "question": "Zabezpieczenie portu zostało skonfigurowane na interfejsie Fa 0/12 przełącznika S1. Jakie działanie nastąpi, gdy PC1 jest dołączony do przełącznika S1 z zastosowaną konfiguracją?",
+        "imageUrl": "https://i.ibb.co/7Jj0fdPF/FAI.png",
+        "multipleAnswers": false,
+        "options": [
+          "Ramki z PC1 zostaną usunięte i zostanie utworzony komunikat dziennika.",
+          "Ramki z PC1 zostaną odrzucone i nie będzie żadnego dziennika naruszenia.",
+          "Ramki z PC1 spowodują natychmiastowe wyłączenie interfejsu i zostanie wprowadzony wpis dziennika.",
+          "Ramki z PC1 zostaną przekazane do miejsca docelowego i zostanie utworzony wpis dziennika.",
+          "Ramki z PC1 zostaną przekazane do miejsca docelowego, ale wpis dziennika nie zostanie utworzony.",
+          "Ramki z PC1 zostaną przesłane dalej, ponieważ brakuje polecenia switchport port-security violation."
+        ],
+        "answer": [
+          "Ramki z PC1 spowodują natychmiastowe wyłączenie interfejsu i zostanie wprowadzony wpis dziennika."
+        ]
+      },
+      {
+        "question": "Która usługa jest domyślnie włączona na przełączniku, a która może ujawnić znaczące informacje o routerze i potencjalnie uczynić go bardziej podatnym na atak?",
+        "multipleAnswers": false,
+        "options": [
+          "FTP",
+          "LLDP",
+          "HTTP",
+          "TFTP",
+          "CDP",
+          "NLDP"
+        ],
+        "answer": [
+          "CDP"
+        ]
+      },
+      {
+        "question": "Jakie trzy kroki konfiguracyjne muszą być wykonane, aby wdrożyć dostęp SSH do routera?",
+        "multipleAnswers": true,
+        "options": [
+          "ustawić unikalne hasło",
+          "ustawić unikalną nazwę hosta",
+          "ustawić nazwę domeny IP",
+          "dodać konto użytkownika",
+          "ustawić hasło trybu uprzywilejowanego",
+          "ustawić hasło na linii konsoli"
+        ],
+        "answer": [
+          "ustawić unikalną nazwę hosta",
+          "ustawić nazwę domeny IP",
+          "dodać konto użytkownika"
+        ]
+      },
+      {
+        "question": "Jaki jest domyślny poziom uprawnień kont użytkowników tworzonych na routerach Cisco?",
+        "multipleAnswers": false,
+        "options": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "10",
+          "15"
+        ],
+        "answer": [
+          "1"
+        ]
+      },
+      {
+        "question": "Który atak warstwy 2 spowoduje, że uprawnieni użytkownicy nie otrzymają prawidłowych adresów IP?",
+        "multipleAnswers": false,
+        "options": [
+          "fałszowanie adresów IP",
+          "fałszowanie ARP",
+          "fałszowanie adresów MAC",
+          "zalewanie adresami MAC",
+          "zagłodzenie DHCP"
+        ],
+        "answer": [
+          "zagłodzenie DHCP"
+        ]
+      },
+      {
+        "question": "Administrator sieci konfiguruje DAI na przełączniku za pomocą polecenia ip arp inspection validate src-mac. Jaki jest cel tego polecenia konfiguracyjnego?",
+        "multipleAnswers": false,
+        "options": [
+          "Sprawdza źródłowy adres MAC w nagłówku Ethernet z tablicą adresów MAC.",
+          "Sprawdza źródłowy adres MAC w nagłówku Ethernet pod kątem skonfigurowanych przez użytkownika list ACL dla ARP.",
+          "Sprawdza źródłowy adres MAC w nagłówku Ethernet z docelowym adresem MAC w treści ARP.",
+          "Sprawdza źródłowy adres MAC w nagłówku Ethernet z adresem MAC nadawcy w treści ARP."
+        ],
+        "answer": [
+          "Sprawdza źródłowy adres MAC w nagłówku Ethernet z adresem MAC nadawcy w treści ARP."
+        ]
+      },
+      {
+        "question": "Jakie są zalecane najlepsze praktyki w przypadku korzystania z natywnej sieci VLAN?",
+        "multipleAnswers": false,
+        "options": [
+          "Użyj zabezpieczeń portu.",
+          "Wyłącz DTP.",
+          "Przypisz go do nieużywanej sieci VLAN.",
+          "Przypisz ten sam numer sieci VLAN, co numer sieci VLAN zarządzania."
+        ],
+        "answer": [
+          "Przypisz go do nieużywanej sieci VLAN."
+        ]
+      },
+      {
+        "question": "Który atak warstwy 2 spowoduje, że użytkownicy komunikują się z fałszywą bramą domyślną?",
+        "multipleAnswers": false,
+        "options": [
+          "fałszowanie adresów IP",
+          "fałszowanie ARP",
+          "fałszowanie adresów MAC",
+          "zalewanie adresami MAC",
+          "zagłodzenie DHCP"
+        ],
+        "answer": [
+          "fałszowanie ARP"
+        ]
+      },
+      {
+        "question": "Która usługa nie jest domyślnie włączona na przełączniku, a która może ujawnić znaczące informacje o routerze i potencjalnie uczynić go bardziej podatnym na atak?",
+        "multipleAnswers": false,
+        "options": [
+          "FTP",
+          "LLDP",
+          "HTTP",
+          "TFTP",
+          "CDP",
+          "NLDP"
+        ],
+        "answer": [
+          "LLDP"
+        ]
+      },
+      {
+        "question": "Na których portach przełącznika należy włączyć funkcję PortFast, aby zwiększyć stabilność protokołu STP?",
+        "multipleAnswers": false,
+        "options": [
+          "tylko porty wybrane jako porty zaufane",
+          "wszystkie porty trunk, które nie są portami głównymi",
+          "wszystkie porty urządzeń końcowych",
+          "tylko porty, które są podłączone do sąsiedniego przełącznika"
+        ],
+        "answer": [
+          "wszystkie porty urządzeń końcowych"
+        ]
+      },
+      {
+        "question": "Student używa polecenia show parser view all, aby zobaczyć podsumowanie wszystkich widoków skonfigurowanych na routerze R1. Co jest oznaczone symbolem * obok JR-ADMIN?",
+        "multipleAnswers": false,
+        "options": [
+          "To jest root view.",
+          "Jest to widok CLI bez skonfigurowanych poleceń.",
+          "To jest superview.",
+          "To jest CLI view."
+        ],
+        "imageUrl": "https://i.ibb.co/fdkYKV8k/image.png",
+        "answer": [
+          "To jest superview."
+        ]
+      },
+      {
+        "question": "Jaki plan ograniczania skutków jest najlepszy, aby udaremnić atak DoS, który powoduje przepełnienie tablic adresów MAC?",
+        "multipleAnswers": false,
+        "options": [
+          "Wyłącz DTP.",
+          "Wyłącz VTP.",
+          "Włącz zabezpieczenia portu.",
+          "Wyłącz STP.",
+          "Umieść nieużywane porty w nieużywanej sieci VLAN.",
+          "Włącz BPDU"
+        ],
+        "answer": [
+          "Włącz zabezpieczenia portu."
+        ]
+      },
+      {
+        "question": "Które dwie praktyki są związane z zabezpieczaniem funkcji i wydajności systemów operacyjnych routerów?",
+        "multipleAnswers": true,
+        "options": [
+          "Zainstaluj zasilacz UPS.",
+          "Przechowuj kopię obrazów systemu operacyjnego routera.",
+          "Skonfiguruj router, aby wykorzystywał jak największą ilość pamięci.",
+          "Włącz domyślne usługi routera.",
+          "Zmniejsz liczbę portów, które mogą być używane do dostępu do routera."
+        ],
+        "answer": [
+          "Przechowuj kopię obrazów systemu operacyjnego routera.",
+          "Zmniejsz liczbę portów, które mogą być używane do dostępu do routera."
+        ]
+      },
+      {
+        "question": "Jakie są trzy techniki ograniczania ataków VLAN?",
+        "multipleAnswers": true,
+        "options": [
+          "Wyłączyć DTP.",
+          "Włącz trunki ręcznie.",
+          "Zmień VLAN natywny na nieużywany.",
+          "Włącz BPDU guard.",
+          "Włącz Source guard.",
+          "Używaj prywatnych sieci VLAN."
+        ],
+        "answer": [
+          "Wyłączyć DTP.",
+          "Włącz trunki ręcznie.",
+          "Zmień VLAN natywny na nieużywany."
+        ]
+      },
+      {
+        "question": "Które polecenie zablokuje próby logowania na routerze RouterA na okres 30 sekund, jeśli w ciągu 10 sekund wystąpią 2 nieudane próby logowania?",
+        "multipleAnswers": false,
+        "options": [
+          "RouterA(config)# login block-for 10 attempts 2 within 30",
+          "RouterA(config)# login block-for 30 attempts 2 within 10",
+          "RouterA(config)# login block-for 2 attempts 30 within 10",
+          "RouterA(config)# login block-for 30 attempts 10 within 2"
+        ],
+        "answer": [
+          "RouterA(config)# login block-for 30 attempts 2 within 10"
+        ]
+      },
+      {
+        "question": "Które trzy stwierdzenia opisują ograniczenia w korzystaniu z poziomów uprawnień do przypisywania autoryzacji poleceń?",
+        "multipleAnswers": true,
+        "options": [
+          "Utworzenie konta użytkownika wymagającego dostępu do większości, ale nie wszystkich poleceń, może być żmudnym procesem.",
+          "Widoki są niezbędne do zdefiniowania poleceń CLI, do których każdy użytkownik może uzyskać dostęp.",
+          "Polecenia ustawione na wyższym poziomie uprawnień nie są dostępne dla użytkowników o niższych uprawnieniach.",
+          "Wymagane jest zdefiniowanie wszystkich 16 poziomów uprawnień, niezależnie od tego, czy są używane, czy nie.",
+          "Nie ma kontroli dostępu do konkretnych interfejsów na routerze.",
+          "Użytkownikowi root należy przypisać każdy zdefiniowany poziom uprawnień"
+        ],
+        "answer": [
+          "Utworzenie konta użytkownika wymagającego dostępu do większości, ale nie wszystkich poleceń, może być żmudnym procesem.",
+          "Polecenia ustawione na wyższym poziomie uprawnień nie są dostępne dla użytkowników o niższych uprawnieniach.",
+          "Nie ma kontroli dostępu do konkretnych interfejsów na routerze."
+        ]
+      },
+      {
+        "question": "Które trzy typy widoków są dostępne podczas konfigurowania funkcji dostępu CLI opartego na rolach?",
+        "multipleAnswers": true,
+        "options": [
+          "superview",
+          "admin view",
+          "root view",
+          "superuser view",
+          "CLI view",
+          "config view"
+        ],
+        "answer": [
+          "superview",
+          "root view",
+          "CLI view"
+        ]
+      },
+      {
+        "question": "Jaki jest cel używania baneru informacyjnego na urządzeniu sieciowym Cisco?",
+        "multipleAnswers": false,
+        "options": [
+          "Może zapewnić większe bezpieczeństwo poprzez spowolnienie ataków.",
+          "Może chronić organizację z prawnego punktu widzenia.",
+          "Można go użyć do ustanowienia okresu ciszy, podczas którego połączenia zdalne będą odrzucane.",
+          "Skutecznie uniemożliwia atakującym dostęp do urządzenia."
+        ],
+        "answer": [
+          "Może chronić organizację z prawnego punktu widzenia."
+        ]
+      },
+      {
+        "question": "Jakie korzyści w zakresie bezpieczeństwa daje włączenie BPDU guard na interfejsach obsługujących PortFast?",
+        "multipleAnswers": false,
+        "options": [
+          "zapobieganie dodaniu obcych przełączników do sieci",
+          "ochrona przed pętlami warstwy 2",
+          "egzekwowanie lokalizacji mostów głównych",
+          "zapobieganie atakom przepełnienia bufora",
+          "Opcja 2"
+        ],
+        "answer": [
+          "zapobieganie dodaniu obcych przełączników do sieci"
+        ]
+      },
+      {
+        "question": "Które dwa rozwiązania Cisco pomagają zapobiegać atakom zagłodzenia DHCP?",
+        "multipleAnswers": true,
+        "options": [
+          "Zabezpieczenie portu",
+          "IP Source Guard",
+          "DHCP Snooping",
+          "Web Security",
+          "Dynamiczna inspekcja ARP"
+        ],
+        "answer": [
+          "Zabezpieczenie portu",
+          "DHCP Snooping"
+        ]
+      },
+      {
+        "question": "Jakiemu rodzajowi ataku z przeskokiem VLAN można zapobiec, wyznaczając nieużywaną sieć VLAN jako natywną sieć VLAN?",
+        "multipleAnswers": false,
+        "options": [
+          "fałszowanie DTP",
+          "fałszowanie DHCP",
+          "podwójne znakowanie VLAN",
+          "zagłodzenie DHCP"
+        ],
+        "answer": [
+          "podwójne znakowanie VLAN"
+        ]
+      },
+      {
+        "question": "Użytkownik nie może uzyskać dostępu do urządzenia skonfigurowanego z AAA. Jakim poleceniem można ustalić, czy dostęp do logowania dla konta użytkownika jest wyłączony?",
+        "multipleAnswers": false,
+        "options": [
+          "show aaa local user lockout.",
+          "show running-configure.",
+          "show aaa sessions.",
+          "show aaa user."
+        ],
+        "answer": [
+          "show aaa local user lockout."
+        ]
+      },
+      {
+        "question": "Użytkownicy sieci są zobowiązani do wprowadzenia poświadczeń nazwy użytkownika i hasła, które zostaną zweryfikowane przez serwer. Który serwer zapewniłby taką usługę?",
+        "multipleAnswers": false,
+        "options": [
+          "AAA",
+          "NAT",
+          "SNMP",
+          "RADIUS",
+          "TACACS+",
+          "802.1X"
+        ],
+        "answer": [
+          "RADIUS"
+        ]
+      },
+      {
+        "question": "Jaki plan ograniczania skutków jest najlepszy, aby udaremnić atak DoS, który powoduje przepełnienie tablic adresów MAC?",
+        "multipleAnswers": false,
+        "options": [
+          "Wyłącz DTP.",
+          "Wyłącz VTP.",
+          "Włącz zabezpieczenia portu.",
+          "Wyłącz STP.",
+          "Umieść nieużywane porty w nieużywanej sieci VLAN.",
+          "Włącz BPDU"
+        ],
+        "answer": [
+          "Włącz zabezpieczenia portu."
+        ]
+      }
+    ]
+  }
+}
