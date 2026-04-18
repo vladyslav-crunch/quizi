@@ -27,7 +27,7 @@ export function QuizSelectionView({ quizKeys, getQuizTitle, onStartQuiz }: QuizS
             </Button>
           ))}
           <p className="pt-1 text-xs leading-relaxed text-muted-foreground sm:text-sm">
-            Created with a few prompts by Vladyslav Tretiak. If you want to add your own quizzes or improve something,
+            Created with a few prompts by <a href={"https://github.com/vladyslav-crunch"}><u>Vladyslav Tretiak</u></a>. If you want to add your own quizzes or improve something,
             feel free to message me.
           </p>
         </CardContent>
