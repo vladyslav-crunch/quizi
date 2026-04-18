@@ -13,7 +13,7 @@ export function QuizResultView({ quizTitle, score, totalQuestions, onChooseAnoth
   const scorePercent = Math.round((score / totalQuestions) * 100)
 
   return (
-    <div className="flex min-h-svh items-center justify-center bg-slate-50 p-3 sm:p-4">
+    <div className="flex min-h-svh items-center justify-center bg-background p-3 text-foreground sm:p-4">
       <Card className="w-full max-w-md shadow-lg">
         <CardHeader>
           <CardTitle className="text-lg sm:text-xl">{quizTitle} Complete</CardTitle>

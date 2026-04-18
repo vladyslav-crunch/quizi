@@ -34,7 +34,7 @@ export function QuizQuestionView({
   onNextQuestion,
 }: QuizQuestionViewProps) {
   return (
-    <div className="flex min-h-svh items-center justify-center bg-slate-50 p-3 sm:p-4">
+    <div className="flex min-h-svh items-center justify-center bg-background p-3 text-foreground sm:p-4">
       <Card className="w-full max-w-xl shadow-xl">
         <CardHeader>
           <div className="mb-2 flex items-center justify-between gap-2 text-[11px] text-muted-foreground sm:text-xs">
@@ -54,7 +54,7 @@ export function QuizQuestionView({
 
         <CardContent className="grid gap-3">
           {questionImageUrl && (
-            <div className="overflow-hidden rounded-xl border bg-white shadow-sm">
+            <div className="overflow-hidden rounded-xl border bg-card shadow-sm">
               <img src={questionImageUrl} alt={currentQuestion.question} className="h-auto w-full object-cover" loading="lazy" />
             </div>
           )}
