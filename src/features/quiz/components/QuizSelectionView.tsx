@@ -20,12 +20,16 @@ export function QuizSelectionView({ quizKeys, getQuizTitle, onStartQuiz }: QuizS
             <Button
               key={quizKey}
               variant="outline"
-              className="w-full justify-start py-5 text-left text-base"
+              className="h-auto w-full justify-start whitespace-normal break-words py-4 text-left text-base leading-snug"
               onClick={() => onStartQuiz(quizKey)}
             >
               {getQuizTitle(quizKey)}
             </Button>
           ))}
+          <p className="pt-1 text-xs leading-relaxed text-muted-foreground sm:text-sm">
+            Created with a few prompts by Vladyslav Tretiak. If you want to add your own quizzes or improve something,
+            feel free to message me.
+          </p>
         </CardContent>
       </Card>
     </div>

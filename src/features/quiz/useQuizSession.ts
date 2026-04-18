@@ -54,7 +54,7 @@ export function useQuizSession() {
 
   const isMultiple = Boolean(currentQuestion && 'multipleAnswers' in currentQuestion && currentQuestion.multipleAnswers)
   const questionImageUrl = currentQuestion && 'imageUrl' in currentQuestion ? currentQuestion.imageUrl : undefined
-  const progressCurrent = Math.min(currentIndex + 1, totalQuestions)
+  const progressCurrent = Math.min(score, totalQuestions)
 
   const handleOptionToggle = (option: string) => {
     if (isShowingFeedback) return
@@ -75,14 +75,18 @@ export function useQuizSession() {
     const isCorrect = isSubmissionCorrect(selectedOptions, correctAnswers, isMultiple)
     if (isCorrect) {
       setScore((prevScore) => prevScore + 1)
+      return
     }
+
+    // Retry incorrectly answered questions after the initial pass.
+    setQuestionOrder((prevOrder) => [...prevOrder, activeQuestionIndex])
   }
 
   const nextQuestion = () => {
     setIsShowingFeedback(false)
     setSelectedOptions([])
 
-    if (currentIndex + 1 < totalQuestions) {
+    if (currentIndex + 1 < questionOrder.length) {
       setCurrentIndex((prev) => prev + 1)
       return
     }

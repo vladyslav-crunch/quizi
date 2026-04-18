@@ -1,6 +1,6 @@
 {
   "network-security-kolos": {
-    "title": "Bezpieczeństwo Sieci - Kolokwium",
+    "title": "Bezpieczeństwo Sieci - Kolokwium 1",
     "questions": [
       {
         "question": "Z powodu wdrożonych kontroli bezpieczeństwa użytkownik może uzyskać dostęp tylko do serwera z FTP. Który komponent AAA to zapewni?",
@@ -473,5 +473,27 @@
         ]
       }
     ]
-  }
+  },"test": {
+  "title": "test",
+  "questions": [
+    {
+      "question": "Z powodu wdrożonych kontroli bezpieczeństwa użytkownik może uzyskać dostęp tylko do serwera z FTP. Który komponent AAA to zapewni?",
+      "multipleAnswers": false,
+      "options": ["dostępność", "niezawodność", "ewidencjonowanie", "autoryzacja", "audyt", "uwierzytelnianie"],
+      "answer": "autoryzacja"
+    },
+    {
+      "question": "Administrator sieci konfiguruje zabezpieczenia portu na przełączniku. Polityka bezpieczeństwa firmy określa, że w przypadku naruszenia należy odrzucać pakiety o nieznanych adresach źródłowych i nie wysyłać żadnych powiadomień. Który tryb naruszenia powinien być skonfigurowany na interfejsach?",
+      "multipleAnswers": false,
+      "options": ["off", "restrict", "protect", "shutdown"],
+      "answer": "protect"
+    },
+    {
+      "question": "Które trzy typy widoków są dostępne podczas konfigurowania funkcji dostępu CLI opartego na rolach? ",
+      "multipleAnswers": true,
+      "options": ["superview", "admin view", "root view", "superuser view", "CLI view", "config view"],
+      "answer": ["superview", "root view", "CLI view"]
+    }
+  ]
+}
 }
