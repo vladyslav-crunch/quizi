@@ -3810,5 +3810,1314 @@
         ]
       }
     ]
+  },
+  "Metody Wielokryterialne": {
+    "title": "Metody Wielokryterialne",
+    "questions": [
+      {
+        "question": "Przy metodzie Blina potrzebujemy:",
+        "multipleAnswers": false,
+        "options": [
+          "zbioru wariantów i zbioru decydentów",
+          "zbioru kryteriów i zbioru wariantów",
+          "zbioru kryteriów i wag ważności kryteriów",
+          "zbioru kryteriów i ich wartości dla wszystkich wariantów"
+        ],
+        "answer": "zbioru wariantów i zbioru decydentów"
+      },
+      {
+        "question": "w metodzie AHP do uszeregowania wariantów od najlepszego do najgorszego:",
+        "multipleAnswers": false,
+        "options": [
+          "Porównujemy parami tylko warianty",
+          "porównujemy parami kryteria, wyznaczamy ich ważność, a potem porównujemy parami warianty",
+          "porównujemy parami warianty i podajemy wagi ważności kryteriów",
+          "skalaryzujemy kryteria i dopiero potem porównujemy parami warianty"
+        ],
+        "answer": "porównujemy parami kryteria, wyznaczamy ich ważność, a potem porównujemy parami warianty"
+      },
+      {
+        "question": "metoda PROMETHEE służąca do wyboru wielokryterialnego należy do metod polegającej na zastosowaniu:",
+        "multipleAnswers": false,
+        "options": [
+          "funkcji dystansowej",
+          "skalaryzacji po normalizacji wartości kryteriów",
+          "relacji przewyższania"
+        ],
+        "answer": "relacji przewyższania"
+      },
+      {
+        "question": "Kodowanie Neumana-Morgensterna polega na:",
+        "multipleAnswers": false,
+        "options": [
+          "dzieleniu bieżącej wartości kryterium rozpatrywanego wariantu przez wartość rozstępu",
+          "dzieleniu bieżącej wartości kryterium rozpatrywanego wariantu odniesioną do wartości minimalnej tego kryterium przez wartość ekstremalną tego kryterium",
+          "dzieleniu bieżącej wartości kryterium rozpatrywanego wariantu odniesioną do wartości minimalnej tego kryterium przez wartość rozstępu"
+        ],
+        "answer": "dzieleniu bieżącej wartości kryterium rozpatrywanego wariantu odniesioną do wartości minimalnej tego kryterium przez wartość rozstępu"
+      },
+      {
+        "question": "Punkt nadir, dla zadania minimalizacji, to:",
+        "multipleAnswers": false,
+        "options": [
+          "punkt przedstawiający najmniej preferowany poziom realizacji wszystkich celów jednocześnie z rozwiązań dopuszczalnych",
+          "punkt przedstawiający najmniej preferowany poziom realizacji wszystkich celów jednocześnie z rozwiązań niezdominowanych",
+          "punkt składający się z minimalnych wartości rozpatrywanych ocen funkcji celu"
+        ],
+        "answer": "punkt przedstawiający najmniej preferowany poziom realizacji wszystkich celów jednocześnie z rozwiązań niezdominowanych"
+      },
+      {
+        "question": "Na czym polega skalaryzacja:",
+        "multipleAnswers": false,
+        "options": [
+          "wybór jednego kryterium ze zbioru kryteriów, a pozostałe kryteria są przesuwane do ograniczeń",
+          "ustawienie kryteriów w pewną hierarchię i poszukiwanie najlepszego wariantu jak dla zadania jednokryterialnego",
+          "agregacji istniejących kryteriów do jednego kryterium"
+        ],
+        "answer": "agregacji istniejących kryteriów do jednego kryterium"
+      },
+      {
+        "question": "Jeśli kryterium ma charakter stymulanty to oznacza, że:",
+        "multipleAnswers": false,
+        "options": [
+          "wzrost jego wartości świadczy o spadku poziomu zjawiska złożonego czyli optymalizowanego obiegu",
+          "nie ma wpływu na poziom zjawiska złożonego",
+          "wzrost jego wartości świadczy o wzroście poziomu zjawiska złożonego"
+        ],
+        "answer": "wzrost jego wartości świadczy o wzroście poziomu zjawiska złożonego"
+      },
+      {
+        "question": "Stożki dodatnie służą do:",
+        "multipleAnswers": false,
+        "options": [
+          "wyznaczenia rankingu wariantów",
+          "wyznaczenia rozwiązań optymalnych w sensie Pareto",
+          "określenia przynależności do zidentyfikowania klas wariantów"
+        ],
+        "answer": "wyznaczenia rozwiązań optymalnych w sensie Pareto"
+      },
+      {
+        "question": "Punkty satysfakcjonujące to punkty, które:",
+        "multipleAnswers": false,
+        "options": [
+          "są wewnętrznymi właściwościami rozpatrywanego zbioru wariantów",
+          "to punkty definiowane przez eksperta, a ich składowe są dodatkowymi ograniczeniami, które muszą spełniać analizowane warianty",
+          "są punktami referencyjnymi służącymi do zastosowania metod bazujących na funkcji dystansowej"
+        ],
+        "answer": "są punktami referencyjnymi służącymi do zastosowania metod bazujących na funkcji dystansowej"
+      },
+      {
+        "question": "Francuski naukowiec Roy opracował następującą rodzinę metod do oceny wielokryterialnej:",
+        "multipleAnswers": false,
+        "options": ["EXPROM", "ELECTRE", "MAPPAC"],
+        "answer": "ELECTRE"
+      },
+      {
+        "question": "Kodowanie metodą Pattern polega na:",
+        "multipleAnswers": false,
+        "options": [
+          "dzieleniu bieżącej wartości kryterium rozpatrywanego wariantu przez wartość ekstremalną tego kryterium",
+          "dzieleniu bieżącej wartości kryterium rozpatrywanego wariantu odniesioną do wartości minimalnej tego kryterium przez wartość ekstremalną tego kryterium",
+          "dzieleniu bieżącej wartości kryterium rozpatrywanego wariantu przez sumę miar wszystkich wariantów tego kryterium"
+        ],
+        "answer": "dzieleniu bieżącej wartości kryterium rozpatrywanego wariantu przez sumę miar wszystkich wariantów tego kryterium"
+      },
+      {
+        "question": "Zmodyfikowana metoda leksykograficzna pozwala na:",
+        "multipleAnswers": false,
+        "options": [
+          "wskazanie najlepszego wariantu lub podzbioru najlepszych rozwiązań",
+          "wyznaczenie rozwiązań optymalnych w sensie Pareto",
+          "wyznaczenie rankingu analizowanych wariantów"
+        ],
+        "answer": "wyznaczenia rankingu analizowanych wariantów"
+      },
+      {
+        "question": "W metodzie Blina poszczególni eksperci:",
+        "multipleAnswers": false,
+        "options": [
+          "wyznaczają hierarchię kryteriów opisujących warianty",
+          "wyznaczają własne uporządkowanie wariantów",
+          "budują własne stożki dominacji i wyznaczają podzbiór wariantów niezdominowanych"
+        ],
+        "answer": "wyznaczają własne uporządkowanie wariantów"
+      },
+      {
+        "question": "Metoda AHP to metoda pozwalająca na:",
+        "multipleAnswers": false,
+        "options": [
+          "wyznaczanie uporządkowania społecznego",
+          "wyznaczanie wariantów niedominowanych",
+          "wyznaczenie rankingu wariantów"
+        ],
+        "answer": "wyznaczenie rankingu wariantów"
+      },
+      {
+        "question": "W zadaniu optymalizacji jednokryterialnej, obiekt jest opisywany przez:",
+        "multipleAnswers": false,
+        "options": [
+          "Zmienne decyzyjne",
+          "Parametry",
+          "Żadna z wymienionych odpowiedzi nie jest poprawna"
+        ],
+        "answer": ["Zmienne decyzyjne", "Parametry"]
+      },
+      {
+        "question": "W zadaniu optymalizacji jednokryterialnej, ograniczenia dzielimy na:",
+        "multipleAnswers": false,
+        "options": [
+          "Brzegowe i zachowawcze (funkcjonalne)",
+          "Poboczne i zachowawcze (funkcjonalne)",
+          "Zachowawcze i funkcjonalne",
+          "Żadna z odpowiedzi nie jest prawidłowa"
+        ],
+        "answer": "Brzegowe i zachowawcze (funkcjonalne)"
+      },
+      {
+        "question": "W zadaniu optymalizacji jednokryterialnej wyróżniamy optymalizację:",
+        "multipleAnswers": false,
+        "options": [
+          "Skalarną i wektorową",
+          "Prostą i złożoną",
+          "Statyczną i dynamiczną",
+          "Funkcjonalną i niefunkcjonalną"
+        ],
+        "answer": "Statyczną i dynamiczną"
+      },
+      {
+        "question": "Jednym z klasycznych algorytmów optymalizacji jednokryterialnej jest:",
+        "multipleAnswers": false,
+        "options": [
+          "Metoda Monako",
+          "Metoda J-D",
+          "Metoda Monte Carlo",
+          "Metoda Nowojorska"
+        ],
+        "answer": "Metoda Monte Carlo"
+      },
+      {
+        "question": "Przykładowe rodzaje zmiennych wykorzystywanych przy optymalizacji to:",
+        "multipleAnswers": false,
+        "options": [
+          "Zmienne proste i złożone",
+          "Zmienne ostre i rozmyte",
+          "Zmienne liniowe i nieliniowe",
+          "Wszystkie odpowiedzi są poprawne"
+        ],
+        "answer": "Zmienne ostre i rozmyte"
+      },
+      {
+        "question": "Jedną z bezgradientowych metod poszukiwania prostych jest:",
+        "multipleAnswers": false,
+        "options": [
+          "Metoda Neldera-Meada",
+          "Metoda Suchodolskiego XD",
+          "Metoda Banacha Banaszka",
+          "Metoda Drahrepus-Kufa",
+          "Metoda DJ’a Chrisa",
+          "Metoda Ulma",
+          "Metoda Gaussa"
+        ],
+        "answer": "Metoda Neldera-Meada"
+      },
+      {
+        "question": "Jedną z podstawowych cech algorytmów genetycznych jest:",
+        "multipleAnswers": false,
+        "options": [
+          "Zdolność do samo-kopiowania",
+          "Stosowanie probabilistycznych metod wyboru",
+          "Przetwarzanie bezpośrednie parametrów zadania",
+          "Rozpoczynają poszukiwania od pojedynczego punktu"
+        ],
+        "answer": "Stosowanie probabilistycznych metod wyboru"
+      },
+      {
+        "question": "Podstawowym celem reprodukcji jest:",
+        "multipleAnswers": false,
+        "options": [
+          "Żadna z odpowiedzi nie jest prawidłowa",
+          "Obie odpowiedzi są prawidłowe",
+          "Utworzenie nowego osobnika na podstawie jego rodziców",
+          "Sens, aby potomek dziedziczył cechy swoich rodzicieli"
+        ],
+        "answer": "Utworzenie nowego osobnika na podstawie jego rodziców"
+      },
+      {
+        "question": "Jedną z metod krzyżowania jest:",
+        "multipleAnswers": false,
+        "options": [
+          "Krzyżowanie równoległe",
+          "Krzyżowanie proste",
+          "Krzyżowanie naprzemienne",
+          "Krzyżowanie arytmetyczne"
+        ],
+        "answer": "Krzyżowanie arytmetyczne"
+      },
+      {
+        "question": "Kto sformułował podstawy programowania ewolucyjnego?",
+        "multipleAnswers": false,
+        "options": [
+          "Jojoba Kuashiva",
+          "Lawrence Fogel",
+          "Obie odpowiedzi są prawidłowe",
+          "Żadna z odpowiedzi nie jest poprawna"
+        ],
+        "answer": "Lawrence Fogel"
+      },
+      {
+        "question": "W algorytmach genetycznych jedną z hipotez nazywa się:",
+        "multipleAnswers": false,
+        "options": [
+          "Hipotezą o pałeczkach",
+          "Hipotezą o kółeczkach",
+          "Hipotezą o cegiełkach",
+          "Hipotezą o paluszkach"
+        ],
+        "answer": "Hipotezą o cegiełkach"
+      },
+      {
+        "question": "Metaheurystyki to _____ metody rozwiązywania szerokiej klasy problemów.",
+        "multipleAnswers": false,
+        "options": [
+          "najszybsze",
+          "najprostsze",
+          "najbardziej zaawansowane",
+          "uniwersalne"
+        ],
+        "answer": "uniwersalne"
+      },
+      {
+        "question": "Jednym z algorytmów ewolucyjnych jest:",
+        "multipleAnswers": false,
+        "options": [
+          "Algorytm robaczkowy",
+          "Algorytm mrówkowy",
+          "Algorytm pszczeli",
+          "Algorytm stonogi"
+        ],
+        "answer": "Algorytm mrówkowy"
+      },
+      {
+        "question": "Który z algorytmów NIE NALEŻY do algorytmów ewolucyjnych:",
+        "multipleAnswers": false,
+        "options": [
+          "algorytm harmoniczny",
+          "algorytm rafy koralowej",
+          "algorytm mrówkowy",
+          "algorytm Monte Carlo"
+        ],
+        "answer": "algorytm Monte Carlo"
+      },
+      {
+        "question": "Zadanie polegające na wyznaczeniu najkrótszej ścieżki łączącej wszystkie miasta i przechodzącej przez każde z nich dokładnie jeden raz nazywa się:",
+        "multipleAnswers": false,
+        "options": [
+          "Problemem Komiwojażera",
+          "Problemem Nawigatora",
+          "Problemem Pilota",
+          "Problemem Dżokeja"
+        ],
+        "answer": "Problemem Komiwojażera"
+      },
+      {
+        "question": "Zmodyfikowana metoda optymalizacji rojem cząstek może być z powodzeniem stosowana jako uniwersalne narzędzie wspomagające optymalizację elementów konstrukcji:",
+        "multipleAnswers": false,
+        "options": [
+          "Optymalizacja kątownicy przestrzennej",
+          "Optymalizacja kratownicy powietrznej",
+          "Optymalizacja sprężyny ściskanej",
+          "Optymalizacja sprężyny luzowanej"
+        ],
+        "answer": "Optymalizacja sprężyny ściskanej"
+      },
+      {
+        "question": "Punktem charakterystycznym w przestrzeni kryterialnej NIE JEST:",
+        "multipleAnswers": false,
+        "options": [
+          "Punkt idealny",
+          "Punkt nadir",
+          "Punkt antyidealny",
+          "Punkt przesunięty"
+        ],
+        "answer": "Punkt przesunięty"
+      },
+      {
+        "question": "Kryterium skalarne jest sposobem ilościowego określenia jakości za pomocą jednej liczby poprzez przyjęcie...:",
+        "multipleAnswers": false,
+        "options": [
+          "Różnej skali dla wszystkich kryteriów oceny",
+          "Wspólnej skali dla wszystkich kryteriów oceny",
+          "Wspólnej skali dla poszczególnych kryteriów oceny",
+          "Różnej skali dla poszczególnych kryteriów oceny"
+        ],
+        "answer": "Wspólnej skali dla wszystkich kryteriów oceny"
+      },
+      {
+        "question": "Jedną ze strategii w metodach skalaryzacji jest:",
+        "multipleAnswers": false,
+        "options": [
+          "Strategia liniowa",
+          "Strategia krzywej",
+          "Strategia Harrison-Cooke",
+          "Strategia automatyczna"
+        ],
+        "answer": "Strategia liniowa"
+      },
+      {
+        "question": "W metodach skalaryzacji występują kodowania:",
+        "multipleAnswers": false,
+        "options": [
+          "Wg. Neumanna-Morgensterna oraz metodą Pattern",
+          "Metodą Karnaugh",
+          "Wg. Eddy-Marscha oraz metodą Random",
+          "Metodą l’Hostpitala"
+        ],
+        "answer": "Wg. Neumanna-Morgensterna oraz metodą Pattern"
+      },
+      {
+        "question": "Metody z relacją przewyższania to na przykład:",
+        "multipleAnswers": false,
+        "options": [
+          "R2D2, Jabba, Jar-Jar",
+          "Saturn, Uran, Jowisz",
+          "Electre, Oreste, Mappac",
+          "SpaceX, Tesla, StarLink"
+        ],
+        "answer": "Electre, Oreste, Mappac"
+      },
+      {
+        "question": "Czym jest propozycja Blina?",
+        "multipleAnswers": false,
+        "options": [
+          "Podejściem wykorzystującym zaawansowane techniki kryminologii",
+          "Podejściem wykorzystującym teorię zbiorów rozmytych",
+          "Podejściem mówiącym o wielkości wszechświata",
+          "Żadna z odpowiedzi nie jest poprawna"
+        ],
+        "answer": "Podejściem wykorzystującym teorię zbiorów rozmytych"
+      },
+      {
+        "question": "Czym jest metoda AHP?",
+        "multipleAnswers": false,
+        "options": [
+          "Auto Hold Process",
+          "Anti-Hype Prediction",
+          "Analytic Horn Pass",
+          "Analytic Hierarchy Process"
+        ],
+        "answer": "Analytic Hierarchy Process"
+      },
+      {
+        "question": "Metoda ograniczonych kryteriów inaczej nazywana jest:",
+        "multipleAnswers": false,
+        "options": [
+          "Hold-On Metod",
+          "Trade-Off Metod",
+          "Be-Safe Metod",
+          "Go-Ahead Metod"
+        ],
+        "answer": "Trade-Off Metod"
+      },
+      {
+        "question": "Co to jest przystosowanie? (fitness)",
+        "multipleAnswers": false,
+        "options": [
+          "nie istnieje taki termin",
+          "obliczanie funkcji dla wybranego chromosomu",
+          "metoda wyboru najlepszego chromosomu",
+          "operacja stosowana w algorytmach genetycznych"
+        ],
+        "answer": "obliczanie funkcji dla wybranego chromosomu"
+      },
+      {
+        "question": "Rozwiązanie niezdominowane to:",
+        "multipleAnswers": false,
+        "options": [
+          "rozwiązanie jednoznacznie określone matematycznie",
+          "rozwiązanie niejednoznaczne matematycznie",
+          "żadna odpowiedź nie jest poprawna",
+          "zawsze jest tylko jedno"
+        ],
+        "answer": "żadna odpowiedź nie jest poprawna"
+      },
+      {
+        "question": "Mamy dwa chromosomy: 11001010 oraz 01001010. Porównując te dwa chromosomy odpowiedz z czym mamy do czynienia?",
+        "multipleAnswers": false,
+        "options": ["inwersją", "krzyżowaniem", "mutacją", "przesunięciem"],
+        "answer": "mutacją"
+      },
+      {
+        "question": "Punkty referencyjne przy ocenie wielokryterialnej są:",
+        "multipleAnswers": false,
+        "options": [
+          "żadna odpowiedź nie jest prawdziwa",
+          "tworzone w przestrzeni celów",
+          "punktami, które wynikają z wewnętrznych własności ocen niezdominowanych",
+          "tworzone w przestrzeni zmiennych decyzyjnych"
+        ],
+        "answer": "tworzone w przestrzeni celów"
+      },
+      {
+        "question": "Dodatnie stożki dominacji zastosowane w ocenie wielokryterialnej:",
+        "multipleAnswers": false,
+        "options": [
+          "pozwalają znaleźć tylko jedno rozwiązanie dopuszczalne",
+          "umożliwiają częściowe uporządkowanie ocen rozwiązań dopuszczalnych",
+          "umożliwiają całkowite uporządkowanie ocen rozwiązań dopuszczalnych",
+          "nie mają zastosowania do poszukiwania rozwiązań niezdominowanych"
+        ],
+        "answer": "umożliwiają częściowe uporządkowanie ocen rozwiązań dopuszczalnych"
+      }
+    ]
+  },
+  "IoT": {
+    "title": "Internet Rzeczy (IoT)",
+    "questions": [
+      {
+        "question": "Czy w architekturze Von Neumanna magistrala dla danych i programu jest wspólna?",
+        "multipleAnswers": false,
+        "options": ["Tak", "Nie", "Nie ma pamięci"],
+        "answer": ["Tak"]
+      },
+      {
+        "question": "Czy protokół i interfejs to to samo określenie?",
+        "multipleAnswers": false,
+        "options": ["Tak", "Nie"],
+        "answer": ["Nie"]
+      },
+      {
+        "question": "Kto wprowadził na rynek mikrokontrolery AVR?",
+        "multipleAnswers": false,
+        "options": ["MicroChip", "Espressif", "Atmel"],
+        "answer": ["Atmel"]
+      },
+      {
+        "question": "Jakie są podstawowe cechy interfejsu I2C?",
+        "multipleAnswers": false,
+        "options": [
+          "Transmisja szeregowa, synchroniczna w dwóch kierunkach",
+          "Transmisja jednokierunkowa",
+          "Transmisja asynchroniczna",
+          "Transmisja równoległa"
+        ],
+        "answer": ["Transmisja szeregowa, synchroniczna w dwóch kierunkach"]
+      },
+      {
+        "question": "Jakie rejestry służą do sterowania interfejsem SPI?",
+        "multipleAnswers": false,
+        "options": [
+          "SPCR, SPSR, SPDR",
+          "CR1, SR, DR",
+          "RST, CS, SS",
+          "CTRL, STATUS, DATA"
+        ],
+        "answer": ["SPCR, SPSR, SPDR"]
+      },
+      {
+        "question": "Funkcja setup() uruchomi się tyle razy, ile zechce użytkownik, a funkcja loop() będzie działała powtarzalnie dopóki układ będzie zasilony.",
+        "multipleAnswers": false,
+        "options": ["Fałsz", "Prawda"],
+        "answer": ["Fałsz"]
+      },
+      {
+        "question": "Środowisko Arduino IDE nie dostarcza gotowych rozwiązań w postaci bibliotek.",
+        "multipleAnswers": false,
+        "options": ["Fałsz", "Prawda"],
+        "answer": ["Fałsz"]
+      },
+      {
+        "question": "Cyfrowy czujnik temperatury DS18B20:",
+        "multipleAnswers": true,
+        "options": [
+          "Może mieć programowo zmienioną rozdzielczość",
+          "Nie ma ograniczeń temperatur (zmierzy każdą temperaturę)",
+          "Ma tylko jedną linię danych (D0) i dwie zasilające (GND i VCC)",
+          "Nie posiada adresu"
+        ],
+        "answer": [
+          "Może mieć programowo zmienioną rozdzielczość",
+          "Ma tylko jedną linię danych (D0) i dwie zasilające (GND i VCC)"
+        ]
+      },
+      {
+        "question": "Za pomocą jakich linii odbywa się komunikacja w interfejsie SPI?",
+        "multipleAnswers": false,
+        "options": [
+          "TX, RX, WTF, SS",
+          "MOSI, SCLK, CS, MISO",
+          "MIMO, SCL, RST, IMOM",
+          "MOSI, MISO, SDA, SCLK"
+        ],
+        "answer": ["MOSI, SCLK, CS, MISO"]
+      },
+      {
+        "question": "Co oznacza termin \"rozdzielczość\" w kontekście przetwornika ADC?",
+        "multipleAnswers": false,
+        "options": [
+          "Ilość bitów w jednym bajcie",
+          "Maksymalna ilość różnych wartości wyjściowych, jaką może dostarczyć ten przetwornik",
+          "Ilość pinów, które można podłączyć do przetwornika",
+          "Maksymalna ilość pinów na mikrokontrolerze"
+        ],
+        "answer": [
+          "Maksymalna ilość różnych wartości wyjściowych, jaką może dostarczyć ten przetwornik"
+        ]
+      },
+      {
+        "question": "Jakie są podstawowe sygnały w interfejsie SPI do przesyłania danych z Master do Slave?",
+        "multipleAnswers": false,
+        "options": ["MOSI i SCLK", "SCLK i CS", "WTF i CLK", "MISO i CS"],
+        "answer": ["MOSI i SCLK"]
+      },
+      {
+        "question": "Cyfrowy czujnik temperatury DS18B20:",
+        "multipleAnswers": true,
+        "options": [
+          "Posiada unikalny 64-bitowy adres",
+          "Nie może mieć programowo zmienionej rozdzielczości",
+          "Ma dwie linie danych (DQ1 i DQ2) i dwie zasilające (GND i VCC)",
+          "Ma określony zakres temperatur <-55,125>"
+        ],
+        "answer": [
+          "Posiada unikalny 64-bitowy adres",
+          "Ma określony zakres temperatur <-55,125>"
+        ]
+      },
+      {
+        "question": "Do czego służy rezystor podciągający w kontekście magistrali 1-Wire?",
+        "multipleAnswers": false,
+        "options": [
+          "Do regulacji temperatury",
+          "Do podtrzymywania stanu wysokiego na linii danych 1-Wire",
+          "Do regulacji prędkości transmisji",
+          "Do zasilania urządzeń Slave"
+        ],
+        "answer": ["Do podtrzymywania stanu wysokiego na linii danych 1-Wire"]
+      },
+      {
+        "question": "Jakie are rodzaje połączeń układów SPI?",
+        "multipleAnswers": false,
+        "options": [
+          "Połączenia jednokierunkowe i dwukierunkowe",
+          "Tylko szeregowe",
+          "Połączenia sekwencyjne i losowe",
+          "Połączenia szeregowe i równoległe"
+        ],
+        "answer": ["Połączenia szeregowe i równoległe"]
+      },
+      {
+        "question": "Co to jest wypełnienie sygnału PWM?",
+        "multipleAnswers": false,
+        "options": [
+          "Częstotliwość sygnału PWM",
+          "Stosunek czasu, gdy sygnał jest aktywny, do całkowitego okresu sygnału",
+          "Minimalna wartość sygnału",
+          "Maksymalna wartość sygnału"
+        ],
+        "answer": [
+          "Stosunek czasu, gdy sygnał jest aktywny, do całkowitego okresu sygnału"
+        ]
+      },
+      {
+        "question": "W jaki sposób magistrala 1-Wire obsługuje zasilanie pasożytnicze?",
+        "multipleAnswers": false,
+        "options": [
+          "Poprzez zasilanie zewnętrzne za pomocą specjalnego przewodu",
+          "Wykorzystuje kondensator wbudowany w urządzenia peryferyjne",
+          "Przez bezpośrednie zasilanie z magistrali danych",
+          "Za pomocą dodatkowego zasilacza"
+        ],
+        "answer": ["Przez bezpośrednie zasilanie z magistrali danych"]
+      },
+      {
+        "question": "Użycie funkcji analogWrite(PIN, VALUE) dla pinu cyfrowego, który nie obsługuje PWM może spowodować:",
+        "multipleAnswers": false,
+        "options": [
+          "Nadpisanie stanu 0 (dla wartości VALUE od 0 do 127) i 1 (dla wartości VALUE od 128 do 255)",
+          "Błąd krytyczny i uszkodzenie układu",
+          "Błąd kompilacji programu",
+          "Nadpisanie stanu 0 dla wszystkich wartości zmiennej VALUE"
+        ],
+        "answer": [
+          "Nadpisanie stanu 0 (dla wartości VALUE od 0 do 127) i 1 (dla wartości VALUE od 128 do 255)"
+        ]
+      },
+      {
+        "question": "Cyfrowe czujniki temperatury DS18B20 mogą wysyłać indywidualne dane (pomiar temperatury) przy pomocy jednej linii danych do urządzenia nadrzędnego.",
+        "multipleAnswers": false,
+        "options": ["Prawda", "Fałsz"],
+        "answer": ["Prawda"]
+      },
+      {
+        "question": "Co to jest Master i Slave w kontekście interfejsu I2C?",
+        "multipleAnswers": false,
+        "options": [
+          "Master i Slave to synonimy w kontekście I2C",
+          "Master to urządzenie kontrolujące transmisję, a Slave to urządzenie podporządkowane",
+          "Master to urządzenie jednokierunkowe, a Slave dwukierunkowe",
+          "Master to zawsze odbiorca danych, a Slave zawsze nadawca"
+        ],
+        "answer": [
+          "Master to urządzenie kontrolujące transmisję, a Slave to urządzenie podporządkowane"
+        ]
+      },
+      {
+        "question": "Jakie są główne różnice między pinem cyfrowym a pinem analogowym?",
+        "multipleAnswers": false,
+        "options": [
+          "Pin cyfrowy może przyjąć jedną z dwóch wartości: 0 lub 1, podczas gdy pin analogowy może mieć wiele różnych wartości napięcia",
+          "Pin cyfrowy zawsze ma napięcie 5V, a pin analogowy 0V",
+          "Pin cyfrowy jest używany tylko do generowania sygnału PWM",
+          "Pin analogowy jest zawsze w stanie wysokim"
+        ],
+        "answer": [
+          "Pin cyfrowy może przyjąć jedną z dwóch wartości: 0 lub 1, podczas gdy pin analogowy może mieć wiele różnych wartości napięcia"
+        ]
+      },
+      {
+        "question": "Co oznacza skrót PWM?",
+        "multipleAnswers": false,
+        "options": [
+          "Parallel Wireless Module",
+          "Programmable Wire Management",
+          "Pulse Width Modulation",
+          "Powerful Work Mechanism"
+        ],
+        "answer": ["Pulse Width Modulation"]
+      },
+      {
+        "question": "Czy transmisja UART jest:",
+        "multipleAnswers": false,
+        "options": ["Asynchroniczna", "Dualna", "Synchroniczna"],
+        "answer": ["Asynchroniczna"]
+      },
+      {
+        "question": "Jakie są możliwe stany dla pinów cyfrowych na mikrokontrolerze?",
+        "multipleAnswers": false,
+        "options": [
+          "0V i GND",
+          "Wysoki i niski",
+          "Wysoki, niski, średni",
+          "Tylko wysoki"
+        ],
+        "answer": ["Wysoki i niski"]
+      },
+      {
+        "question": "Rozwinięcie skrótu PWM to:",
+        "multipleAnswers": false,
+        "options": [
+          "Pulse Width Modulation",
+          "Programmable Wire Management",
+          "Parallel Wireless Module",
+          "Powerful Work Mechanism"
+        ],
+        "answer": ["Pulse Width Modulation"]
+      },
+      {
+        "question": "Funkcja pinMode() służy do:",
+        "multipleAnswers": false,
+        "options": [
+          "Ustalenia stanu wysokiego na konkretnym pinie",
+          "Konfiguracji portu cyfrowego",
+          "Przeliczenia jednego zbioru wartości na drugi zbiór wartości",
+          "Ustawienia stanu niskiego na konkretnym pinie"
+        ],
+        "answer": ["Konfiguracji portu cyfrowego"]
+      },
+      {
+        "question": "Jaka jest gwarantowana prędkość transmisji w interfejsie SPI?",
+        "multipleAnswers": false,
+        "options": [
+          "10 Mb/s",
+          "2,1 Mb/s (w prezentacji zientara)",
+          "5 Mb/s",
+          "1,2 Mb/s"
+        ],
+        "answer": ["2,1 Mb/s (w prezentacji zientara)"]
+      },
+      {
+        "question": "(Mniejszy schemat) W którym miejscu należy zastosować rezystor podciągający?",
+        "multipleAnswers": false,
+        "options": [
+          "Pomiędzy przyciskiem, a pinem D3",
+          "Między masą, a przyciskiem",
+          "Nigdy nie trzeba stosować rezystora podciągającego"
+        ],
+        "answer": ["Pomiędzy przyciskiem, a pinem D3"]
+      },
+      {
+        "question": "(Większy schemat) Jaki stan jest na pinie D8, jeżeli oba przyciski są wciśnięte?",
+        "multipleAnswers": false,
+        "options": ["Niski", "Wysoki", "Nieustalony"],
+        "answer": ["Niski"]
+      },
+      {
+        "question": "Czy magistrala i interfejs to to samo określenie?",
+        "multipleAnswers": false,
+        "options": ["Nie", "Tak"],
+        "answer": ["Nie"]
+      },
+      {
+        "question": "Czy w topologii sieci typu siatka, wszystkie węzły muszą być połączone do jednego urządzenia centralnego?",
+        "multipleAnswers": false,
+        "options": ["Nie", "Tak"],
+        "answer": ["Nie"]
+      },
+      {
+        "question": "Co oznacza skrót RISC?",
+        "multipleAnswers": false,
+        "options": [
+          "Zintegrowany interfejs komputera wektorowego",
+          "Komputer z uproszczonymi instrukcjami procesora",
+          "Komputer ze złożonymi instrukcjami procesora"
+        ],
+        "answer": ["Komputer z uproszczonymi instrukcjami procesora"]
+      },
+      {
+        "question": "Czy zawartość pamięci DRAM znika po zaniku zasilania?",
+        "multipleAnswers": false,
+        "options": ["Tak", "Nie"],
+        "answer": ["Tak"]
+      },
+      {
+        "question": "Termistor to:",
+        "multipleAnswers": false,
+        "options": [
+          "Element, który zmienia rezystancję pod wpływem zmiany temperatury",
+          "Element, który pod wpływem napięcia nagrzewa się",
+          "Element wykonawczy"
+        ],
+        "answer": [
+          "Element, który zmienia rezystancję pod wpływem zmiany temperatury"
+        ]
+      },
+      {
+        "question": "Jaka logika napięciowa obowiązuje w popularnym ArduinoUNO?",
+        "multipleAnswers": false,
+        "options": ["3.3 Volt", "5 Volt", "9 Volt"],
+        "answer": ["5 Volt"]
+      },
+      {
+        "question": "Czy w architekturze harwardzkiej magistrala danych i programu jest wspólna?",
+        "multipleAnswers": false,
+        "options": ["Tak", "Nie"],
+        "answer": ["Nie"]
+      },
+      {
+        "question": "Czy w topologii sieci typu gwiazda, wszystkie węzły muszą być połączone do jednego urządzenia centralnego?",
+        "multipleAnswers": false,
+        "options": ["Tak", "Nie"],
+        "answer": ["Tak"]
+      },
+      {
+        "question": "Czy magistrala i protokół to to samo określenie?",
+        "multipleAnswers": false,
+        "options": ["Nie", "Tak"],
+        "answer": ["Nie"]
+      },
+      {
+        "question": "Czy czujniki generacyjne pod wpływem działania wielkości mierzonej wytwarzają na swym wyjściu sygnał elektryczny?",
+        "multipleAnswers": false,
+        "options": ["Tak", "Nie"],
+        "answer": ["Tak"]
+      },
+      {
+        "question": "Czy czujniki parametryczne pod wpływem działania wielkości mierzonej wytwarzają na swym wyjściu sygnał elektryczny?",
+        "multipleAnswers": false,
+        "options": ["Tak", "Nie"],
+        "answer": ["Nie"]
+      },
+      {
+        "question": "Czy przekaźnik to:",
+        "multipleAnswers": false,
+        "options": [
+          "Sensor",
+          "Aktuator",
+          "Element przesyłający sygnał cyfrowy"
+        ],
+        "answer": ["Aktuator"]
+      },
+      {
+        "question": "Czy EEPROM i EPROM to te same układy?",
+        "multipleAnswers": false,
+        "options": ["Nie", "Tak"],
+        "answer": ["Nie"]
+      },
+      {
+        "question": "Czy w modelu komunikacji typu Master-Slave może występować wiele urządzeń typu Master?",
+        "multipleAnswers": false,
+        "options": ["Nie", "Tak"],
+        "answer": ["Nie"]
+      },
+      {
+        "question": "Czy w architekturze Von-Neumana magistrala dla danych i programu jest wspólna?",
+        "multipleAnswers": false,
+        "options": ["Tak", "Nie", "Nie ma pamięci"],
+        "answer": ["Tak"]
+      },
+      {
+        "question": "Co oznacza skrót CISC?",
+        "multipleAnswers": false,
+        "options": [
+          "Zintegrowany interfejs komputera wektorowego",
+          "Komputer ze złożonymi instrukcjami procesora",
+          "Komputer z uproszczonymi instrukcjami procesora"
+        ],
+        "answer": ["Komputer ze złożonymi instrukcjami procesora"]
+      },
+      {
+        "question": "Zgodnie z jaką architekturą zbudowany jest komputer typu RISC?",
+        "multipleAnswers": false,
+        "options": ["Harwardzką", "Von-Neumana", "Zmodyfikowaną harwardzką"],
+        "answer": ["Harwardzką"]
+      },
+      {
+        "question": "Czy interfejs komunikacyjny 1-Wire jest interfejsem:",
+        "multipleAnswers": false,
+        "options": ["Szeregowym", "Równoległym", "Wektorowym"],
+        "answer": ["Szeregowym"]
+      },
+      {
+        "question": "Co oznacza skrót EPROM?",
+        "multipleAnswers": false,
+        "options": [
+          "Erasable Programmable ROM",
+          "Program Empty ROM",
+          "Prompt ROM"
+        ],
+        "answer": ["Erasable Programmable ROM"]
+      },
+      {
+        "question": "Czy zawartość pamięci ROM znika po zaniku zasilania?",
+        "multipleAnswers": false,
+        "options": ["Nie", "Tak"],
+        "answer": ["Nie"]
+      },
+      {
+        "question": "Czy fotorezystor:",
+        "multipleAnswers": false,
+        "options": [
+          "To rezystor o stałej wartości rezystancji",
+          "Zmienia rezystancję przy zmianie oświetlenia",
+          "Emituje światło przy zmianie rezystancji"
+        ],
+        "answer": ["Zmienia rezystancję przy zmianie oświetlenia"]
+      },
+      {
+        "question": "Czy mikrokontrolery ARM charakteryzują się architekturą typu:",
+        "multipleAnswers": false,
+        "options": ["RISC", "CISC", "MISC", "ZISC"],
+        "answer": ["RISC"]
+      },
+      {
+        "question": "Czy popularny mikrokontroler firmy Espressif (ESP32) można zaprogramować w języku LUA?",
+        "multipleAnswers": false,
+        "options": ["Tak", "Nie"],
+        "answer": ["Tak"]
+      },
+      {
+        "question": "Co oznacza skrót ROM?",
+        "multipleAnswers": false,
+        "options": [
+          "Read Only Memory",
+          "Random Only Memory",
+          "Read One Memory"
+        ],
+        "answer": ["Read Only Memory"]
+      },
+      {
+        "question": "Jaka logika napięciowa obowiązuje w popularnym ESP32?",
+        "multipleAnswers": false,
+        "options": ["3.3 Volt", "5 Volt", "9 Volt"],
+        "answer": ["3.3 Volt"]
+      },
+      {
+        "question": "Czy interfejs komunikacyjny SPI jest interfejsem:",
+        "multipleAnswers": false,
+        "options": ["Szeregowym", "Równoległym", "Wektorowym"],
+        "answer": ["Szeregowym"]
+      },
+      {
+        "question": "Czy interfejs komunikacyjny I2C jest interfejsem:",
+        "multipleAnswers": false,
+        "options": ["Szeregowym", "Równoległym", "Wektorowym"],
+        "answer": ["Szeregowym"]
+      },
+      {
+        "question": "Jaki jest cel używania sekwencji Start i Stop w protokole I2C?",
+        "multipleAnswers": false,
+        "options": [
+          "Rozpoczęcie i zakończenie transmisji danych",
+          "Określenie priorytetu urządzeń",
+          "Weryfikacja poprawności połączenia",
+          "Synchronizacja prędkości transmisji"
+        ],
+        "answer": ["Rozpoczęcie i zakończenie transmisji danych"]
+      },
+      {
+        "question": "Co robi funkcja digitalWrite(Pin, Stan)?",
+        "multipleAnswers": false,
+        "options": [
+          "Ustawia stan pinu cyfrowego na wartość wysoką lub niską",
+          "Zmienia stan pinu cyfrowego na wartość analogową",
+          "Umożliwia odczytanie wartości analogowej z pinu cyfrowego",
+          "Ustawia rozdzielczość pinu cyfrowego"
+        ],
+        "answer": ["Ustawia stan pinu cyfrowego na wartość wysoką lub niską"]
+      },
+      {
+        "question": "Czym różni się tryb multi-master od trybu single-master w I2C?",
+        "multipleAnswers": false,
+        "options": [
+          "Tryb multi-master umożliwia jednoczesną komunikację wielu Masterów, a single-master tylko jednego",
+          "Tryb single-master jest bardziej niezawodny od trybu multi-master",
+          "Tryb multi-master jest stosowany tylko w transmisji dźwięku, a single-master w transmisji danych",
+          "W trybie single-master nie ma Mastera, tylko Slave'y"
+        ],
+        "answer": [
+          "Tryb multi-master umożliwia jednoczesną komunikację wielu Masterów, a single-master tylko jednego"
+        ]
+      },
+      {
+        "question": "Funkcja setup() po włączeniu zasilania uruchomi się. Wybierz wszystkie poprawne:",
+        "multipleAnswers": false,
+        "options": [
+          "1 raz",
+          "10 razy",
+          "Nieskończenie wiele razy",
+          "Nieskończenie wiele razy dopóki układ będzie zasilony"
+        ],
+        "answer": ["1 raz"]
+      },
+      {
+        "question": "Jakie są podstawowe elementy ramki w protokole I2C?",
+        "multipleAnswers": false,
+        "options": [
+          "Adres i dane",
+          "Adres i suma kontrolna",
+          "Początek i koniec",
+          "Dane i bity parzystości"
+        ],
+        "answer": ["Adres i dane"]
+      },
+      {
+        "question": "Jakie trzy parametry sygnału PWM należy zdefiniować w programie mikrokontrolera ESP32?",
+        "multipleAnswers": false,
+        "options": [
+          "Częstotliwość, rozdzielczość, kanał",
+          "Czas, amplituda, częstotliwość",
+          "Amplituda, kanał, czas",
+          "Częstotliwość, czas, współczynnik wypełnienia"
+        ],
+        "answer": ["Częstotliwość, rozdzielczość, kanał"]
+      },
+      {
+        "question": "Jakie informacje zawiera 64-bitowy kod identyfikacyjny w protokole 1-Wire?",
+        "multipleAnswers": false,
+        "options": [
+          "Numer seryjny, kod rodziny i suma CRC",
+          "Tylko numer seryjny",
+          "Tylko kod rodziny",
+          "Tylko adres"
+        ],
+        "answer": ["Numer seryjny, kod rodziny i suma CRC"]
+      },
+      {
+        "question": "Dany jest kod postaci:\nvoid coSieWydarzy() {\nint a = 5;\nfor (int i = 0; i < 100; i++) {\ndelay(10);\na++;\n}\ndelay(1000)\nint b = a - 5;\n}\nZaznacz wszystkie poprawne odpowiedzi:",
+        "multipleAnswers": true,
+        "options": [
+          "Pętla for w funkcji coSieWydarzy() wykona się 99 razy",
+          "Pętla for w funkcji coSieWydarzy() wykona się 100 razy",
+          "Funkcja coSieWydarzy() będzie trwała 2 sekundy",
+          "Funkcja coSieWydarzy() będzie trwała 1 sekundą i 10 milisekund",
+          "Zmienna b będzie miała na zakończenie funkcji wartość 5",
+          "Zmienna b będzie miała na zakończenie funkcji wartość 100",
+          "Funkcja coSieWydarzy() będzie trwała 10 sekund",
+          "Funkcja coSieWydarzy() będzie trwała 10 milisekund"
+        ],
+        "answer": [
+          "Pętla for w funkcji coSieWydarzy() wykona się 100 razy",
+          "Funkcja coSieWydarzy() będzie trwała 2 sekundy",
+          "Zmienna b będzie miała na zakończenie funkcji wartość 100"
+        ]
+      },
+      {
+        "question": "(Większy schemat) Jaki stan jest na pinie D8, jeżeli przycisk_1 jest wciśnięty? Wybierz wszystkie poprawne:",
+        "multipleAnswers": false,
+        "options": ["Wysoki", "Niski", "Nieustalony"],
+        "answer": ["Niski"]
+      },
+      {
+        "question": "Jakie are główne różnice między pinem cyfrowym a pinem analogowym?",
+        "multipleAnswers": false,
+        "options": [
+          "Pin cyfrowy może przyjąć jedną z dwóch wartości: 0 lub 1, podczas gdy pin analogowy może mieć wiele różnych wartości napięcia",
+          "Pin cyfrowy zawsze ma napięcie 5V, a pin analogowy 0V",
+          "Pin cyfrowy jest używany tylko do generowania sygnału PWM",
+          "Pin analogowy jest zawsze w stanie wysokim"
+        ],
+        "answer": [
+          "Pin cyfrowy może przyjąć jedną z dwóch wartości: 0 lub 1, podczas gdy pin analogowy może mieć wiele różnych wartości napięcia"
+        ]
+      },
+      {
+        "question": "Jakie są główne sygnały w interfejsie SPI do przesyłania danych z Master do Slave?",
+        "multipleAnswers": false,
+        "options": ["MOSI i SCLK", "SCLK i CS", "WTF i CLK", "MISO i CS"],
+        "answer": ["MOSI i SCLK"]
+      },
+      {
+        "question": "Co oznacza stan bezczynny magistrali 1-Wire?",
+        "multipleAnswers": false,
+        "options": [
+          "Stan wysoki na linii danych",
+          "Przerwanie transmisji",
+          "Brak napięcia na magistrali",
+          "Stan niski na linii danych"
+        ],
+        "answer": ["Stan wysoki na linii danych"]
+      },
+      {
+        "question": "Czy transmisja szeregowa UART jest:",
+        "multipleAnswers": false,
+        "options": ["Asynchroniczna", "Synchroniczna", "Dualna"],
+        "answer": ["Asynchroniczna"]
+      }
+    ]
+  },
+  "WykladMonograficzny": {
+    "title": "Wykład monograficzny",
+    "questions": [
+      {
+        "question": "Inżynieria odwrotna to proces:",
+        "multipleAnswers": false,
+        "options": [
+          "zamiany modelu wirtualnego na obiekt rzeczywisty",
+          "przeniesienia fizycznie istniejącego obiektu do środowiska wirtualnego 3D",
+          "przekształcenia obiektów 2D na obiekty 3D"
+        ],
+        "answer": [
+          "przeniesienia fizycznie istniejącego obiektu do środowiska wirtualnego 3D"
+        ]
+      },
+      {
+        "question": "Skanery 3D pracujące w technologii światła strukturalnego:",
+        "multipleAnswers": false,
+        "options": [
+          "odczytują strukturę powierzchni obiektu za pomocą lasera",
+          "wykorzystują projekcję obrazu na skanowany obiekt",
+          "muszą pracować w warunkach \"ciemni\""
+        ],
+        "answer": ["wykorzystują projekcję obrazu na skanowany obiekt"]
+      },
+      {
+        "question": "Chmury punktów ze skanu 3D na początku przekształcamy na model:",
+        "multipleAnswers": false,
+        "options": ["siatkowy", "bryłowy", "parametryczny"],
+        "answer": ["siatkowy"]
+      },
+      {
+        "question": "Triangulacja to proces:",
+        "multipleAnswers": false,
+        "options": [
+          "redukcji liczby punktów, za 3 punkty wstawiany jest 1 punkt",
+          "zamiany tekstury bitmapowej na teksturę parametryczną",
+          "łączenia punktów w trójkąty, które wyznaczają powierzchnię"
+        ],
+        "answer": ["łączenia punktów w trójkąty, które wyznaczają powierzchnię"]
+      },
+      {
+        "question": "Skanery bezkontaktowe aktywne:",
+        "multipleAnswers": false,
+        "options": [
+          "badają obiekt poprzez przemieszczanie się głowicy po obiekcie",
+          "emitują pewien rodzaj promieniowania i wykrywają jego refleksje lub promieniowanie przechodzące przez obiekt",
+          "nie emitują żadnego światła same z siebie, zamiast tego polegają na detekcji odbitego światła otoczenia"
+        ],
+        "answer": [
+          "emitują pewien rodzaj promieniowania i wykrywają jego refleksje lub promieniowanie przechodzące przez obiekt"
+        ]
+      },
+      {
+        "question": "Modele 3D do prezentacji online lub wydruku zapisywane są w postaci:",
+        "multipleAnswers": false,
+        "options": [
+          "chmur kolorowanych punktów",
+          "siatek wielokątów z nałożoną teksturą",
+          "modeli warstwicowych"
+        ],
+        "answer": ["siatek wielokątów z nałożoną teksturą"]
+      },
+      {
+        "question": "Uniwersalny format do przenoszenia modeli 3D wraz z teksturą:",
+        "multipleAnswers": false,
+        "options": ["obj", "sti", "jpg"],
+        "answer": ["obj"]
+      },
+      {
+        "question": "Zapis modelu 3D w postaci przeznaczonej do wydruku 3D określany jest nazwą:",
+        "multipleAnswers": false,
+        "options": ["FF-Code", "G-Spot", "G-Code"],
+        "answer": ["G-Code"]
+      },
+      {
+        "question": "Proces teksturowania to:",
+        "multipleAnswers": false,
+        "options": [
+          "sklejanie prymitywów aby zbudować bardziej złożony obiekt",
+          "nakładanie obrazów 2D na trójwymiarowe modele",
+          "generowanie wyglądu fotorealistycznego"
+        ],
+        "answer": ["nakładanie obrazów 2D na trójwymiarowe modele"]
+      },
+      {
+        "question": "VR to:",
+        "multipleAnswers": false,
+        "options": [
+          "wirtualna rzeczywistość",
+          "rozszerzona rzeczywistość",
+          "mieszana rzeczywistość"
+        ],
+        "answer": ["wirtualna rzeczywistość"]
+      },
+      {
+        "question": "Do podstawowych elementów siatki (mesh) można zaliczyć:",
+        "multipleAnswers": false,
+        "options": ["piksel", "primitives", "faces"],
+        "answer": ["faces"]
+      },
+      {
+        "question": "Immersja to:",
+        "multipleAnswers": false,
+        "options": [
+          "system łączący świat rzeczywisty z generowanym komputerowo",
+          "proces zanurzenia się w świat wirtualny, czyli złudzenie że obiekty graficzne nas otaczają",
+          "możliwość poruszania się w VR i oddziaływanie na obiekty tego świata"
+        ],
+        "answer": [
+          "proces zanurzenia się w świat wirtualny, czyli złudzenie że obiekty graficzne nas otaczają"
+        ]
+      },
+      {
+        "question": "Grafika bitmapowa to grafika gdzie:",
+        "multipleAnswers": false,
+        "options": [
+          "piksel jest najmniejszym elementem zawierającym informacje o obrazie",
+          "każdy element jest osobnym obiektem",
+          "obiekty mogą odzwierciedlać bardzo skomplikowane kształty, również obiekty spotykane w przyrodzie, np. rośliny, drzewa, krajobrazy"
+        ],
+        "answer": [
+          "piksel jest najmniejszym elementem zawierającym informacje o obrazie"
+        ]
+      },
+      {
+        "question": "Technologia addytywna to proces:",
+        "multipleAnswers": false,
+        "options": [
+          "przybliżonego renderowania bez włączania rzutowania cieni",
+          "modelowania 3D przy wykorzystaniu voxeli",
+          "szybkiego wytwarzania fizycznej repliki modelu komputerowego przy zastosowaniu drukarek 3D"
+        ],
+        "answer": [
+          "szybkiego wytwarzania fizycznej repliki modelu komputerowego przy zastosowaniu drukarek 3D"
+        ]
+      },
+      {
+        "question": "Za pomocą oprogramowania CAD tworzone są trójwymiarowe modele:",
+        "multipleAnswers": false,
+        "options": ["warstwicowe", "punktowe", "parametryczne"],
+        "answer": ["parametryczne"]
+      },
+      {
+        "question": "Technologia druku 3D FDM/FFF polega na:",
+        "multipleAnswers": false,
+        "options": [
+          "laserowym utwardzaniu warstwy żelu",
+          "termicznym nakładaniu warstw tworzywa termoplastycznego",
+          "utwardzaniu warstwy proszku przez promieniowanie UV"
+        ],
+        "answer": ["termicznym nakładaniu warstw tworzywa termoplastycznego"]
+      },
+      {
+        "question": "Proces skanowania 3D prowadzi do:",
+        "multipleAnswers": false,
+        "options": [
+          "bezpośredniego uzyskania obiektu powierzchniowego",
+          "bezpośredniego otrzymania obiektu bryłowego",
+          "uzyskania chmury punktów reprezentujących powierzchnię obiektu"
+        ],
+        "answer": [
+          "uzyskania chmury punktów reprezentujących powierzchnię obiektu"
+        ]
+      },
+      {
+        "question": "Modelowanie to:",
+        "multipleAnswers": false,
+        "options": [
+          "nanoszenie materiałów na modele 3D",
+          "proces tworzenia i modyfikacji obiektów trójwymiarowych za pomocą specjalnego programu komputerowego",
+          "nadanie realizmu tworzonym obiektom w scenie"
+        ],
+        "answer": [
+          "proces tworzenia i modyfikacji obiektów trójwymiarowych za pomocą specjalnego programu komputerowego"
+        ]
+      },
+      {
+        "question": "Interakcja to:",
+        "multipleAnswers": false,
+        "options": [
+          "możliwość poruszania się w VR i oddziaływanie na obiekty tego świata",
+          "system łączący świat rzeczywisty z generowanym komputerowo",
+          "proces zanurzenia się w świat wirtualny, czyli złudzenie że obiekty graficzne nas otaczają"
+        ],
+        "answer": [
+          "możliwość poruszania się w VR i oddziaływanie na obiekty tego świata"
+        ]
+      },
+      {
+        "question": "Modele siatkowe to:",
+        "multipleAnswers": false,
+        "options": [
+          "inna nazwa modeli powierzchniowych",
+          "modele, w których powierzchnia jest reprezentowana przez siatkę wielokątów połączonych krawędziami",
+          "modele składające się jedynie z krawędzi, jak sieć rybacka"
+        ],
+        "answer": [
+          "modele, w których powierzchnia jest reprezentowana przez siatkę wielokątów połączonych krawędziami"
+        ]
+      },
+      {
+        "question": "Skanery dalekiego zasięgu są skanerami:",
+        "multipleAnswers": false,
+        "options": ["na światło strukturalne", "laserowymi", "kontaktowymi"],
+        "answer": ["laserowymi"]
+      },
+      {
+        "question": "Do skanowania dużych obiektów architektonischen służy skaner:",
+        "multipleAnswers": false,
+        "options": ["Faro Focus 3D", "Artec Eva", "RangeVision NEO"],
+        "answer": ["Faro Focus 3D"]
+      },
+      {
+        "question": "Grafika wektorowa to grafika gdzie:",
+        "multipleAnswers": false,
+        "options": [
+          "obiekty mogą być realizowane jako 2D i 3D",
+          "cały obraz w swojej pierwotnej wersji jest jednym obiektem",
+          "zbyt duże powiększanie obrazu powoduje rozmywanie granic widzianych elementów"
+        ],
+        "answer": ["obiekty mogą być realizowane jako 2D i 3D"]
+      },
+      {
+        "question": "Program Artec Studio Professional służy do:",
+        "multipleAnswers": false,
+        "options": [
+          "obróbki danych pozyskanych w procesie skanowania",
+          "modelowania parametrycznego",
+          "tworzenia i edycji grafiki rastrowej"
+        ],
+        "answer": ["obróbki danych pozyskanych w procesie skanowania"]
+      }
+    ]
   }
 }
