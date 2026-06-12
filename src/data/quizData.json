@@ -5,6 +5,7 @@
       {
         "question": "Z powodu wdrożonych kontroli bezpieczeństwa użytkownik może uzyskać dostęp tylko do serwera z FTP. Który komponent AAA to zapewni?",
         "multipleAnswers": false,
+        "imageUrl": "https://i.ibb.co/WWDNLhrt/image.png",
         "options": [
           "dostępność",
           "niezawodność",
@@ -3815,6 +3816,37 @@
     "title": "Metody Wielokryterialne",
     "questions": [
       {
+        "question": "Kryterium k2 jest minimalizowane, a k1 maksymalizowane. Wskaż zestaw rozwiązań niezdominowanych (Pareto-optymalnych) dla przedstawionego wykresu:",
+        "imageUrl": "https://i.ibb.co/ZzvYncr1/image.png",
+        "multipleAnswers": false,
+        "options": [
+          "X1, X4, X6, X8, X2",
+          "X3, X12, X9, X10, X5",
+          "X2, X8",
+          "X1, X3, X12"
+        ],
+        "answer": "X2, X8"
+      },
+      {
+        "question": "Jaką wartość parametr r przyjmuje gdy mówimy o normie Czebyszewa:",
+        "imageUrl": "https://i.ibb.co/KxX60RN8/image.png",
+        "multipleAnswers": false,
+        "options": ["r = 1", "r = 2", "r dąży do nieskończoności"],
+        "answer": "r dąży do nieskończoności"
+      },
+      {
+        "question": "Wybierz rozwiązanie optymalne w sensie porządku leksykograficznego spośród rozwiązań dopuszczalnych przedstawionych w tabeli. Wszystkie kryteria są minimalizowane. Hierarchia kryteriów: F1, F3, F2.",
+        "imageUrl": "https://i.ibb.co/WWDNLhrt/image.png",
+        "multipleAnswers": false,
+        "options": [
+          "Rozwiązanie 2",
+          "Rozwiązanie 6",
+          "Rozwiązanie 10",
+          "Rozwiązanie 12"
+        ],
+        "answer": "Rozwiązanie 12"
+      },
+      {
         "question": "Przy metodzie Blina potrzebujemy:",
         "multipleAnswers": false,
         "options": [
@@ -3928,7 +3960,7 @@
         "options": [
           "wskazanie najlepszego wariantu lub podzbioru najlepszych rozwiązań",
           "wyznaczenie rozwiązań optymalnych w sensie Pareto",
-          "wyznaczenie rankingu analizowanych wariantów"
+          "wyznaczenia rankingu analizowanych wariantów"
         ],
         "answer": "wyznaczenia rankingu analizowanych wariantów"
       },
@@ -3954,7 +3986,7 @@
       },
       {
         "question": "W zadaniu optymalizacji jednokryterialnej, obiekt jest opisywany przez:",
-        "multipleAnswers": false,
+        "multipleAnswers": true,
         "options": [
           "Zmienne decyzyjne",
           "Parametry",
