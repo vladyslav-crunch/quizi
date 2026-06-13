@@ -3812,8 +3812,8 @@
       }
     ]
   },
-  "Metody Wielokryterialne": {
-    "title": "Metody Wielokryterialne",
+  "Metody wnioskowania wielokryterialnego": {
+    "title": "Metody wnioskowania wielokryterialnego",
     "questions": [
       {
         "question": "Kryterium k2 jest minimalizowane, a k1 maksymalizowane. Wskaż zestaw rozwiązań niezdominowanych (Pareto-optymalnych) dla przedstawionego wykresu:",
