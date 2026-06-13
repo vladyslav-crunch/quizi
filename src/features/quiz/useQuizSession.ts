@@ -1,24 +1,34 @@
 import { useMemo, useState } from 'react'
 import { quizData } from '#/features/quiz/model'
 import type { Question, QuizKey } from '#/features/quiz/model'
-import { createShuffledOrder, getCorrectAnswers, isSubmissionCorrect } from '#/features/quiz/utils'
+import { createShuffledOptions, createShuffledOrder, getCorrectAnswers, isSubmissionCorrect } from '#/features/quiz/utils'
 
 export function useQuizSession() {
   const [selectedQuizKey, setSelectedQuizKey] = useState<QuizKey | null>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [score, setScore] = useState(0)
+  const [firstAttemptCorrectCount, setFirstAttemptCorrectCount] = useState(0)
+  const [firstAttemptWrongCount, setFirstAttemptWrongCount] = useState(0)
   const [isFinished, setIsFinished] = useState(false)
   const [selectedOptions, setSelectedOptions] = useState<string[]>([])
   const [isShowingFeedback, setIsShowingFeedback] = useState(false)
   const [questionOrder, setQuestionOrder] = useState<number[]>([])
+  const [shuffledOptions, setShuffledOptions] = useState<string[]>([])
+
+  const setOptionsForQuestion = (question: Question | undefined) => {
+    setShuffledOptions(question ? createShuffledOptions(question.options) : [])
+  }
 
   const initializeQuizProgress = (quizKey: QuizKey) => {
+    const initialQuestionOrder = createShuffledOrder(quizData[quizKey].questions.length)
+
     setCurrentIndex(0)
-    setScore(0)
+    setFirstAttemptCorrectCount(0)
+    setFirstAttemptWrongCount(0)
     setIsFinished(false)
     setSelectedOptions([])
     setIsShowingFeedback(false)
-    setQuestionOrder(createShuffledOrder(quizData[quizKey].questions.length))
+    setQuestionOrder(initialQuestionOrder)
+    setOptionsForQuestion(quizData[quizKey].questions[initialQuestionOrder[0]])
   }
 
   const startQuiz = (quizKey: QuizKey) => {
@@ -33,11 +43,13 @@ export function useQuizSession() {
 
   const backToQuizSelection = () => {
     setCurrentIndex(0)
-    setScore(0)
+    setFirstAttemptCorrectCount(0)
+    setFirstAttemptWrongCount(0)
     setIsFinished(false)
     setSelectedOptions([])
     setIsShowingFeedback(false)
     setQuestionOrder([])
+    setShuffledOptions([])
     setSelectedQuizKey(null)
   }
 
@@ -54,7 +66,8 @@ export function useQuizSession() {
 
   const isMultiple = Boolean(currentQuestion && 'multipleAnswers' in currentQuestion && currentQuestion.multipleAnswers)
   const questionImageUrl = currentQuestion && 'imageUrl' in currentQuestion ? currentQuestion.imageUrl : undefined
-  const progressCurrent = Math.min(score, totalQuestions)
+  const progressCurrent = currentIndex + 1
+  const progressTotal = questionOrder.length || totalQuestions
 
   const handleOptionToggle = (option: string) => {
     if (isShowingFeedback) return
@@ -73,9 +86,17 @@ export function useQuizSession() {
     setIsShowingFeedback(true)
 
     const isCorrect = isSubmissionCorrect(selectedOptions, correctAnswers, isMultiple)
+    const isFirstAttempt = currentIndex < totalQuestions
+
     if (isCorrect) {
-      setScore((prevScore) => prevScore + 1)
+      if (isFirstAttempt) {
+        setFirstAttemptCorrectCount((prevCount) => prevCount + 1)
+      }
       return
+    }
+
+    if (isFirstAttempt) {
+      setFirstAttemptWrongCount((prevCount) => prevCount + 1)
     }
 
     // Retry incorrectly answered questions after the initial pass.
@@ -87,7 +108,11 @@ export function useQuizSession() {
     setSelectedOptions([])
 
     if (currentIndex + 1 < questionOrder.length) {
-      setCurrentIndex((prev) => prev + 1)
+      const nextIndex = currentIndex + 1
+      const nextQuestionIndex = questionOrder[nextIndex] ?? nextIndex
+
+      setCurrentIndex(nextIndex)
+      setOptionsForQuestion(currentQuiz?.questions[nextQuestionIndex])
       return
     }
 
@@ -100,14 +125,17 @@ export function useQuizSession() {
     currentQuiz,
     currentQuestion,
     totalQuestions,
-    score,
+    firstAttemptCorrectCount,
+    firstAttemptWrongCount,
     isFinished,
     selectedOptions,
     isShowingFeedback,
     correctAnswers,
     isMultiple,
     questionImageUrl,
+    shuffledOptions,
     progressCurrent,
+    progressTotal,
     startQuiz,
     restartCurrentQuiz,
     backToQuizSelection,

@@ -12,6 +12,17 @@ export function createShuffledOrder(total: number) {
   return order
 }
 
+export function createShuffledOptions(options: string[]) {
+  const shuffledOptions = [...options]
+
+  for (let i = shuffledOptions.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]]
+  }
+
+  return shuffledOptions
+}
+
 export function getCorrectAnswers(question: Question) {
   return Array.isArray(question.answer) ? question.answer : [question.answer]
 }

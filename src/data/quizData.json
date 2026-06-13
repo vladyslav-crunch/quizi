@@ -4306,6 +4306,78 @@
     "title": "Internet Rzeczy (IoT)",
     "questions": [
       {
+        "question": "Do ustalenia dowolnego portu od A0 do A5 jako wejście potrzebne jest polecenie:",
+        "multipleAnswers": false,
+        "options": ["digitalRead()", "pinMode()", "analogRead()", "setup()"],
+        "answer": "pinMode()"
+      },
+      {
+        "question": "Interfejs 1-Wire pozwala na komunikację wielu urządzeń podrzędnych o ile każde z nich posiada:",
+        "multipleAnswers": false,
+        "options": [
+          "Osobne linie zasilania",
+          "Indywidualny adres",
+          "Inny protokół transmisji",
+          "Własny generator kwarcowy"
+        ],
+        "answer": "Indywidualny adres"
+      },
+      {
+        "question": "Jak programowo zmienić jasność świecenia diody?",
+        "multipleAnswers": false,
+        "options": [
+          "Za pomocą zmiany napięcia zasilania mikrokontrolera",
+          "Za pomocą modulacji szerokości impulsu",
+          "Za pomocą zmiany częstotliwości taktowania procesora",
+          "Nie da się programowo zmienić jasności świecenia diody"
+        ],
+        "answer": "Za pomocą modulacji szerokości impulsu"
+      },
+      {
+        "question": "Cechą charakterystyczną urządzeń posługujących się protokołem One-Wire jest?",
+        "multipleAnswers": false,
+        "options": [
+          "Mały rozmiar",
+          "Brak cech charakterystycznych",
+          "Czarna obudowa",
+          "Adres"
+        ],
+        "answer": "Adres"
+      },
+      {
+        "question": "Użycie funkcji analogWrite(PIN, VALUE) dla pinu cyfrowego, który obsługuje PWM może spowodować?",
+        "multipleAnswers": false,
+        "options": [
+          "Błąd kompilacji programu",
+          "Nadpisanie stanu od 0 do 255 zgodnie z wartością zmiennej VALUE",
+          "Nadpisanie stanu HIGH dla wszystkich wartości zmiennej VALUE",
+          "Błąd krytyczny i uszkodzenie układu (prawdopodobnie ta odpowiedź)"
+        ],
+        "answer": "Nadpisanie stanu od 0 do 255 zgodnie z wartością zmiennej VALUE"
+      },
+      {
+        "question": "Ile linii danych używa interfejs I2C?",
+        "multipleAnswers": false,
+        "options": [
+          "Jedną (SDA)",
+          "Dwie (SDA, SCL)",
+          "Trzy (TX, RX, GND)",
+          "Cztery (MISO, MOSI, SCK, SS)"
+        ],
+        "answer": "Dwie (SDA, SCL)"
+      },
+      {
+        "question": "Jakie są efekty zwiększania rozdzielczości pomiaru temperatury dla czujnika DS18B20 w kontekście czasu odczytu?",
+        "multipleAnswers": false,
+        "options": [
+          "Zwiększenie rozdzielczości powoduje skrócenie czasu odczytu",
+          "Zwiększenie rozdzielczości powoduje wydłużenie czasu odczytu",
+          "Zmiana rozdzielczości nie wpływa na czas odczytu",
+          "Czas odczytu zależy wyłącznie od napięcia zasilania, a nie od rozdzielczości"
+        ],
+        "answer": "Zwiększenie rozdzielczości powoduje wydłużenie czasu odczytu"
+      },
+      {
         "question": "Czy w architekturze Von Neumanna magistrala dla danych i programu jest wspólna?",
         "multipleAnswers": false,
         "options": ["Tak", "Nie", "Nie ma pamięci"],
@@ -4459,7 +4531,9 @@
           "Przez bezpośrednie zasilanie z magistrali danych",
           "Za pomocą dodatkowego zasilacza"
         ],
-        "answer": ["Przez bezpośrednie zasilanie z magistrali danych"]
+        "answer": [
+          "Wykorzystuje kondensator wbudowany w urządzenia peryferyjne"
+        ]
       },
       {
         "question": "Użycie funkcji analogWrite(PIN, VALUE) dla pinu cyfrowego, który nie obsługuje PWM może spowodować:",
@@ -4878,19 +4952,6 @@
         "multipleAnswers": false,
         "options": ["Wysoki", "Niski", "Nieustalony"],
         "answer": ["Niski"]
-      },
-      {
-        "question": "Jakie are główne różnice między pinem cyfrowym a pinem analogowym?",
-        "multipleAnswers": false,
-        "options": [
-          "Pin cyfrowy może przyjąć jedną z dwóch wartości: 0 lub 1, podczas gdy pin analogowy może mieć wiele różnych wartości napięcia",
-          "Pin cyfrowy zawsze ma napięcie 5V, a pin analogowy 0V",
-          "Pin cyfrowy jest używany tylko do generowania sygnału PWM",
-          "Pin analogowy jest zawsze w stanie wysokim"
-        ],
-        "answer": [
-          "Pin cyfrowy może przyjąć jedną z dwóch wartości: 0 lub 1, podczas gdy pin analogowy może mieć wiele różnych wartości napięcia"
-        ]
       },
       {
         "question": "Jakie są główne sygnały w interfejsie SPI do przesyłania danych z Master do Slave?",

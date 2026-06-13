@@ -7,13 +7,14 @@ import type { Question } from '#/features/quiz/model'
 type QuizQuestionViewProps = {
   quizTitle: string
   currentQuestion: Question
+  options: string[]
   questionImageUrl?: string
   isMultiple: boolean
   selectedOptions: string[]
   correctAnswers: string[]
   isShowingFeedback: boolean
   progressCurrent: number
-  totalQuestions: number
+  progressTotal: number
   onOptionToggle: (option: string) => void
   onSubmit: () => void
   onNextQuestion: () => void
@@ -22,13 +23,14 @@ type QuizQuestionViewProps = {
 export function QuizQuestionView({
   quizTitle,
   currentQuestion,
+  options,
   questionImageUrl,
   isMultiple,
   selectedOptions,
   correctAnswers,
   isShowingFeedback,
   progressCurrent,
-  totalQuestions,
+  progressTotal,
   onOptionToggle,
   onSubmit,
   onNextQuestion,
@@ -45,9 +47,9 @@ export function QuizQuestionView({
               </span>
             )}
           </div>
-          <Progress value={(progressCurrent / totalQuestions) * 100} className="h-1.5" />
+          <Progress value={progressTotal > 0 ? (progressCurrent / progressTotal) * 100 : 0} className="h-1.5" />
           <div className="pt-2 text-right text-[11px] font-medium text-muted-foreground sm:text-xs">
-            {progressCurrent}/{totalQuestions}
+            {progressCurrent}/{progressTotal}
           </div>
           <CardTitle className="pt-3 text-lg leading-snug sm:pt-4 sm:text-xl">{currentQuestion.question}</CardTitle>
         </CardHeader>
@@ -58,7 +60,7 @@ export function QuizQuestionView({
               <img src={questionImageUrl} alt={currentQuestion.question} className="h-auto w-full object-cover" loading="lazy" />
             </div>
           )}
-          {currentQuestion.options.map((option, idx) => {
+          {options.map((option, idx) => {
             const isSelected = selectedOptions.includes(option)
             const isCorrect = correctAnswers.includes(option)
 

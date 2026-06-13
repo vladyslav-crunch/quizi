@@ -51,14 +51,17 @@ function QuizApp() {
     currentQuiz,
     currentQuestion,
     totalQuestions,
-    score,
+    firstAttemptCorrectCount,
+    firstAttemptWrongCount,
     isFinished,
     selectedOptions,
     isShowingFeedback,
     correctAnswers,
     isMultiple,
     questionImageUrl,
+    shuffledOptions,
     progressCurrent,
+    progressTotal,
     startQuiz,
     restartCurrentQuiz,
     backToQuizSelection,
@@ -99,7 +102,8 @@ function QuizApp() {
       <QuizLayout showBackButton onBack={backToQuizSelection}>
         <QuizResultView
           quizTitle={currentQuiz.title}
-          score={score}
+          firstAttemptCorrectCount={firstAttemptCorrectCount}
+          firstAttemptWrongCount={firstAttemptWrongCount}
           totalQuestions={totalQuestions}
           onChooseAnother={backToQuizSelection}
           onRetry={restartCurrentQuiz}
@@ -117,13 +121,14 @@ function QuizApp() {
       <QuizQuestionView
         quizTitle={currentQuiz.title}
         currentQuestion={currentQuestion}
+        options={shuffledOptions}
         questionImageUrl={questionImageUrl}
         isMultiple={isMultiple}
         selectedOptions={selectedOptions}
         correctAnswers={correctAnswers}
         isShowingFeedback={isShowingFeedback}
         progressCurrent={progressCurrent}
-        totalQuestions={totalQuestions}
+        progressTotal={progressTotal}
         onOptionToggle={handleOptionToggle}
         onSubmit={handleSubmit}
         onNextQuestion={nextQuestion}
