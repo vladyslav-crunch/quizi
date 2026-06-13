@@ -1,5 +1,11 @@
 import { ArrowRight, CheckCircle2, XCircle } from 'lucide-react'
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '#/components/ui/card'
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '#/components/ui/card'
 import { Button } from '#/components/ui/button'
 import { Progress } from '#/components/ui/progress'
 import type { Question } from '#/features/quiz/model'
@@ -47,24 +53,37 @@ export function QuizQuestionView({
               </span>
             )}
           </div>
-          <Progress value={progressTotal > 0 ? (progressCurrent / progressTotal) * 100 : 0} className="h-1.5" />
+          <Progress
+            value={
+              progressTotal > 0 ? (progressCurrent / progressTotal) * 100 : 0
+            }
+            className="h-1.5"
+          />
           <div className="pt-2 text-right text-[11px] font-medium text-muted-foreground sm:text-xs">
             {progressCurrent}/{progressTotal}
           </div>
-          <CardTitle className="pt-3 text-lg leading-snug sm:pt-4 sm:text-xl">{currentQuestion.question}</CardTitle>
+          <CardTitle className="pt-3 text-lg leading-snug sm:pt-4 sm:text-xl">
+            {currentQuestion.question}
+          </CardTitle>
         </CardHeader>
 
         <CardContent className="grid gap-3">
           {questionImageUrl && (
             <div className="overflow-hidden rounded-xl border bg-card shadow-sm">
-              <img src={questionImageUrl} alt={currentQuestion.question} className="h-auto w-full object-cover" loading="lazy" />
+              <img
+                src={questionImageUrl}
+                alt={currentQuestion.question}
+                className="h-auto w-full object-cover"
+                loading="lazy"
+              />
             </div>
           )}
           {options.map((option, idx) => {
             const isSelected = selectedOptions.includes(option)
             const isCorrect = correctAnswers.includes(option)
 
-            let buttonClassName = 'h-auto min-h-14 justify-start border-2 px-4 py-3 text-left transition-all sm:px-6 sm:py-4 '
+            let buttonClassName =
+              'h-auto min-h-14 justify-start border-2 px-4 py-3 text-left transition-all sm:px-6 sm:py-4 '
 
             if (isShowingFeedback) {
               if (isCorrect) buttonClassName += 'border-green-500 bg-green-50'
@@ -84,16 +103,24 @@ export function QuizQuestionView({
                 <div className="flex w-full min-w-0 items-start gap-2 sm:items-center sm:gap-3">
                   <div
                     className={`flex h-5 w-5 items-center justify-center rounded border ${
-                      isSelected ? 'border-primary bg-primary' : 'border-gray-300'
+                      isSelected
+                        ? 'border-primary bg-primary'
+                        : 'border-gray-300'
                     }`}
                   >
-                    {isSelected && <div className="h-2 w-2 rounded-full bg-white" />}
+                    {isSelected && (
+                      <div className="h-2 w-2 rounded-full bg-white" />
+                    )}
                   </div>
                   <span className="min-w-0 flex-1 whitespace-normal break-words text-sm leading-snug sm:text-base">
                     {option}
                   </span>
-                  {isShowingFeedback && isCorrect && <CheckCircle2 className="text-green-600" />}
-                  {isShowingFeedback && isSelected && !isCorrect && <XCircle className="text-red-600" />}
+                  {isShowingFeedback && isCorrect && (
+                    <CheckCircle2 className="text-green-600" />
+                  )}
+                  {isShowingFeedback && isSelected && !isCorrect && (
+                    <XCircle className="text-red-600" />
+                  )}
                 </div>
               </Button>
             )
@@ -102,7 +129,11 @@ export function QuizQuestionView({
 
         <CardFooter className="flex flex-col gap-2 border-t pt-4 sm:flex-row sm:justify-end">
           {!isShowingFeedback ? (
-            <Button className="w-full sm:w-auto" onClick={onSubmit} disabled={selectedOptions.length === 0}>
+            <Button
+              className="w-full sm:w-auto"
+              onClick={onSubmit}
+              disabled={selectedOptions.length === 0}
+            >
               Check Answer
             </Button>
           ) : (
@@ -115,4 +146,3 @@ export function QuizQuestionView({
     </div>
   )
 }
-

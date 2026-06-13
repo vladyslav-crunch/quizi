@@ -1,7 +1,12 @@
 import { useMemo, useState } from 'react'
 import { quizData } from '#/features/quiz/model'
 import type { Question, QuizKey } from '#/features/quiz/model'
-import { createShuffledOptions, createShuffledOrder, getCorrectAnswers, isSubmissionCorrect } from '#/features/quiz/utils'
+import {
+  createShuffledOptions,
+  createShuffledOrder,
+  getCorrectAnswers,
+  isSubmissionCorrect,
+} from '#/features/quiz/utils'
 
 export function useQuizSession() {
   const [selectedQuizKey, setSelectedQuizKey] = useState<QuizKey | null>(null)
@@ -19,7 +24,9 @@ export function useQuizSession() {
   }
 
   const initializeQuizProgress = (quizKey: QuizKey) => {
-    const initialQuestionOrder = createShuffledOrder(quizData[quizKey].questions.length)
+    const initialQuestionOrder = createShuffledOrder(
+      quizData[quizKey].questions.length,
+    )
 
     setCurrentIndex(0)
     setFirstAttemptCorrectCount(0)
@@ -57,15 +64,24 @@ export function useQuizSession() {
   const totalQuestions = currentQuiz?.questions.length ?? 0
   const activeQuestionIndex = questionOrder[currentIndex] ?? currentIndex
   const currentQuestion =
-    currentQuiz && totalQuestions > 0 ? (currentQuiz.questions[activeQuestionIndex] as Question | undefined) : undefined
+    currentQuiz && totalQuestions > 0
+      ? (currentQuiz.questions[activeQuestionIndex] as Question | undefined)
+      : undefined
 
   const correctAnswers = useMemo(() => {
     if (!currentQuestion) return []
     return getCorrectAnswers(currentQuestion)
   }, [currentQuestion])
 
-  const isMultiple = Boolean(currentQuestion && 'multipleAnswers' in currentQuestion && currentQuestion.multipleAnswers)
-  const questionImageUrl = currentQuestion && 'imageUrl' in currentQuestion ? currentQuestion.imageUrl : undefined
+  const isMultiple = Boolean(
+    currentQuestion &&
+    'multipleAnswers' in currentQuestion &&
+    currentQuestion.multipleAnswers,
+  )
+  const questionImageUrl =
+    currentQuestion && 'imageUrl' in currentQuestion
+      ? currentQuestion.imageUrl
+      : undefined
   const progressCurrent = currentIndex + 1
   const progressTotal = questionOrder.length || totalQuestions
 
@@ -74,7 +90,9 @@ export function useQuizSession() {
 
     if (isMultiple) {
       setSelectedOptions((prev) =>
-        prev.includes(option) ? prev.filter((selectedOption) => selectedOption !== option) : [...prev, option],
+        prev.includes(option)
+          ? prev.filter((selectedOption) => selectedOption !== option)
+          : [...prev, option],
       )
       return
     }
@@ -85,7 +103,11 @@ export function useQuizSession() {
   const handleSubmit = () => {
     setIsShowingFeedback(true)
 
-    const isCorrect = isSubmissionCorrect(selectedOptions, correctAnswers, isMultiple)
+    const isCorrect = isSubmissionCorrect(
+      selectedOptions,
+      correctAnswers,
+      isMultiple,
+    )
     const isFirstAttempt = currentIndex < totalQuestions
 
     if (isCorrect) {
@@ -144,5 +166,3 @@ export function useQuizSession() {
     nextQuestion,
   }
 }
-
-

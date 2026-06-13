@@ -17,7 +17,10 @@ export function createShuffledOptions(options: string[]) {
 
   for (let i = shuffledOptions.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1))
-    ;[shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]]
+    ;[shuffledOptions[i], shuffledOptions[j]] = [
+      shuffledOptions[j],
+      shuffledOptions[i],
+    ]
   }
 
   return shuffledOptions
@@ -27,14 +30,19 @@ export function getCorrectAnswers(question: Question) {
   return Array.isArray(question.answer) ? question.answer : [question.answer]
 }
 
-export function isSubmissionCorrect(selectedOptions: string[], correctAnswers: string[], isMultiple: boolean) {
+export function isSubmissionCorrect(
+  selectedOptions: string[],
+  correctAnswers: string[],
+  isMultiple: boolean,
+) {
   if (!isMultiple) {
     return selectedOptions[0] === correctAnswers[0]
   }
 
   return (
     selectedOptions.length === correctAnswers.length &&
-    selectedOptions.every((selectedOption) => correctAnswers.includes(selectedOption))
+    selectedOptions.every((selectedOption) =>
+      correctAnswers.includes(selectedOption),
+    )
   )
 }
-
