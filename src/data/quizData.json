@@ -4652,7 +4652,8 @@
         "answer": ["Pomiędzy przyciskiem, a pinem D3"]
       },
       {
-        "question": "(Większy schemat) Jaki stan jest na pinie D8, jeżeli oba przyciski są wciśnięte?",
+        "imageUrl": "https://i.ibb.co/4ZpJzgwX/image.png",
+        "question": "Jaki stan jest na pinie D8, jeżeli oba przyciski są wciśnięte?",
         "multipleAnswers": false,
         "options": ["Niski", "Wysoki", "Nieustalony"],
         "answer": ["Niski"]
@@ -4948,10 +4949,11 @@
         ]
       },
       {
-        "question": "(Większy schemat) Jaki stan jest na pinie D8, jeżeli przycisk_1 jest wciśnięty? Wybierz wszystkie poprawne:",
+        "imageUrl": "https://i.ibb.co/4ZpJzgwX/image.png",
+        "question": "Jaki stan jest na pinie D8, jeżeli przycisk_1 jest wciśnięty? Wybierz wszystkie poprawne:",
         "multipleAnswers": false,
         "options": ["Wysoki", "Niski", "Nieustalony"],
-        "answer": ["Niski"]
+        "answer": ["Wysoki"]
       },
       {
         "question": "Jakie są główne sygnały w interfejsie SPI do przesyłania danych z Master do Slave?",
