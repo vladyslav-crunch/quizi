@@ -8,7 +8,11 @@ type QuizSelectionViewProps = {
   onStartQuiz: (quizKey: QuizKey) => void
 }
 
-export function QuizSelectionView({ quizKeys, getQuizTitle, onStartQuiz }: QuizSelectionViewProps) {
+export function QuizSelectionView({
+  quizKeys,
+  getQuizTitle,
+  onStartQuiz,
+}: QuizSelectionViewProps) {
   return (
     <div className="flex min-h-svh items-center justify-center bg-background p-3 text-foreground sm:p-4">
       <Card className="w-full max-w-md shadow-lg">
@@ -26,13 +30,8 @@ export function QuizSelectionView({ quizKeys, getQuizTitle, onStartQuiz }: QuizS
               {getQuizTitle(quizKey)}
             </Button>
           ))}
-          <p className="pt-1 text-xs leading-relaxed text-muted-foreground sm:text-sm">
-            Created with a few prompts by <a href={"https://github.com/vladyslav-crunch"}><u>Vladyslav Tretiak</u></a>. If you want to add your own quizzes or improve something,
-            feel free to message me.
-          </p>
         </CardContent>
       </Card>
     </div>
   )
 }
-
