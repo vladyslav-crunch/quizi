@@ -4633,13 +4633,8 @@
       {
         "question": "Jaka jest gwarantowana prędkość transmisji w interfejsie SPI?",
         "multipleAnswers": false,
-        "options": [
-          "10 Mb/s",
-          "2,1 Mb/s (w prezentacji zientara)",
-          "5 Mb/s",
-          "1,2 Mb/s"
-        ],
-        "answer": ["2,1 Mb/s (w prezentacji zientara)"]
+        "options": ["10 Mb/s", "2,1 Mb/s", "5 Mb/s", "1,2 Mb/s"],
+        "answer": ["2,1 Mb/s"]
       },
       {
         "question": "(Mniejszy schemat) W którym miejscu należy zastosować rezystor podciągający?",
