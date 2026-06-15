@@ -8,6 +8,13 @@ import {
   isSubmissionCorrect,
 } from '#/features/quiz/utils'
 
+const forceMultipleChoiceQuizTitles = [
+  'Systemy Sztucznej Inteligencji - Zestaw 1',
+  'Systemy Sztucznej Inteligencji - Zestaw 2',
+  'Systemy Sztucznej Inteligencji - Zestaw 3',
+  'Systemy Sztucznej Inteligencji - Zestaw 4',
+]
+
 export function useQuizSession() {
   const [selectedQuizKey, setSelectedQuizKey] = useState<QuizKey | null>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -73,11 +80,13 @@ export function useQuizSession() {
     return getCorrectAnswers(currentQuestion)
   }, [currentQuestion])
 
-  const isMultiple = Boolean(
-    currentQuestion &&
-    'multipleAnswers' in currentQuestion &&
-    currentQuestion.multipleAnswers,
-  )
+  const isMultiple =
+    Boolean(currentQuiz?.title && forceMultipleChoiceQuizTitles.includes(currentQuiz.title)) ||
+    Boolean(
+      currentQuestion &&
+        'multipleAnswers' in currentQuestion &&
+        currentQuestion.multipleAnswers,
+    )
   const questionImageUrl =
     currentQuestion && 'imageUrl' in currentQuestion
       ? currentQuestion.imageUrl
