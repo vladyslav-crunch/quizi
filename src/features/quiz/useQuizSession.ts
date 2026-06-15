@@ -81,11 +81,14 @@ export function useQuizSession() {
   }, [currentQuestion])
 
   const isMultiple =
-    Boolean(currentQuiz?.title && forceMultipleChoiceQuizTitles.includes(currentQuiz.title)) ||
+    Boolean(
+      currentQuiz?.title &&
+      forceMultipleChoiceQuizTitles.includes(currentQuiz.title),
+    ) ||
     Boolean(
       currentQuestion &&
-        'multipleAnswers' in currentQuestion &&
-        currentQuestion.multipleAnswers,
+      'multipleAnswers' in currentQuestion &&
+      currentQuestion.multipleAnswers,
     )
   const questionImageUrl =
     currentQuestion && 'imageUrl' in currentQuestion
