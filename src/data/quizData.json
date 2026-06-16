@@ -2375,9 +2375,9 @@
           "Wymagają specyfikacji stanu początkowego i testu celu.",
           "Mogą wymagać pamiętania stanów odwiedzonych, by uniknąć pętli.",
           "Często operują na przestrzeni stanów o dużym czynniku rozgałęzienia.",
-          "All correct"
+          "Wszystkie twierdzenia są prawdziwe, niema fałszywych."
         ],
-        "answer": "All correct"
+        "answer": "Wszystkie twierdzenia są prawdziwe, niema fałszywych."
       },
       {
         "question": "161) Wskaż poprawne stwierdzenia o Przeszukiwaniu iteracyjnym w głąb.",
