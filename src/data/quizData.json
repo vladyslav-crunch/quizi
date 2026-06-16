@@ -1457,9 +1457,10 @@
           "Active learning gwarantuje osiągnięcie 100% dokładności przy dowolnie małej liczbie etykiet.",
           "Active learning to synonim Federated Learning — chodzi o federację klientów.",
           "Najlepszą strategią jest zawsze wybierać przykłady, dla których model jest najbardziej pewny.",
-          "Wybór próbek nie wpływa na uprzedzenia — nie trzeba dbać o reprezentatywność."
+          "Wybór próbek nie wpływa na uprzedzenia — nie trzeba dbać o reprezentatywność.",
+          "Żadne."
         ],
-        "answer": "Najlepszą strategią jest zawsze wybierać przykłady, dla których model jest najbardziej pewny."
+        "answer": "Żadne."
       },
       {
         "question": "98) Uczenie samonadzorowane (Self-Supervised Learning) polega na:",
