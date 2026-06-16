@@ -3217,9 +3217,10 @@
           "Optymalizator Adam.",
           "Warstwa splotowa dwuwymiarowa (konwolucja 2D).",
           "Algorytm sortowania szybkiego (Quicksort).",
-          "Normalizacja wsadowa (Batch Normalization)."
+          "Normalizacja wsadowa (Batch Normalization).",
+          "Wszystko nie niepoprawne"
         ],
-        "answer": []
+        "answer": ["Wszystko nie niepoprawne"]
       },
       {
         "question": "217) Jak normalizacja lub standaryzacja wejść może oddziaływać na wybór funkcji aktywacji?",
