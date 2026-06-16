@@ -2117,7 +2117,7 @@
           "Umożliwiają procedury przy slotach (tzw. demons/triggers) wywoływane przy odczycie/zapisie.",
           "Łączą wiedzę deklaratywną (struktura) z proceduralną (procedury slotów).",
           "Są wygodne do modelowania stereotypowych sytuacji (schematy/„scripts”).",
-          "Pozwalają na dziedziczenie domywlnych wartości po hierarchii ram.",
+          "Pozwalają na dziedziczenie domyślnych wartości po hierarchii ram.",
           "Reprezentują pojęcia jako struktury z atrybutami (slotami) i wartościami (fillerami)."
         ]
       },
