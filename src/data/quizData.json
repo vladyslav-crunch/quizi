@@ -3449,7 +3449,7 @@
           "Normalizacja wsadowa może zmniejszać potrzebę silnej regularyzacji wag."
         ],
         "answer": [
-          "Harmonogram tempa uczenia może ograniczyć przeuczenie even przy słabszej karze wag.",
+          "Harmonogram tempa uczenia może ograniczyć przeuczenie nawet przy słabszej karze wag.",
           "W praktyce często łączy się Dropout z Regularyzacją L2.",
           "Augmentacja danych działa jak regularyzacja, zwiększając różnorodność próbek.",
           "Wczesne zatrzymanie może pełnić rolę regularyzacji uzupełniającej.",
