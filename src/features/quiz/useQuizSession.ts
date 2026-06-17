@@ -25,7 +25,9 @@ type QuizOption = {
   title: string
 }
 
-function getRandomQuestionsFromSet(quizTitle: (typeof forceMultipleChoiceQuizTitles)[number]) {
+function getRandomQuestionsFromSet(
+  quizTitle: (typeof forceMultipleChoiceQuizTitles)[number],
+) {
   const questions = quizData[quizTitle].questions
   const shuffledOrder = createShuffledOrder(questions.length)
 
@@ -52,8 +54,11 @@ function createQuizForKey(quizKey: SelectableQuizKey) {
 }
 
 export function useQuizSession() {
-  const [selectedQuizKey, setSelectedQuizKey] = useState<SelectableQuizKey | null>(null)
-  const [selectedQuiz, setSelectedQuiz] = useState<ReturnType<typeof createQuizForKey> | null>(null)
+  const [selectedQuizKey, setSelectedQuizKey] =
+    useState<SelectableQuizKey | null>(null)
+  const [selectedQuiz, setSelectedQuiz] = useState<ReturnType<
+    typeof createQuizForKey
+  > | null>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [firstAttemptCorrectCount, setFirstAttemptCorrectCount] = useState(0)
   const [firstAttemptWrongCount, setFirstAttemptWrongCount] = useState(0)

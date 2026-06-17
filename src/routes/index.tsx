@@ -72,10 +72,7 @@ function QuizApp() {
   if (!selectedQuizKey) {
     return (
       <QuizLayout>
-        <QuizSelectionView
-          quizOptions={quizOptions}
-          onStartQuiz={startQuiz}
-        />
+        <QuizSelectionView quizOptions={quizOptions} onStartQuiz={startQuiz} />
       </QuizLayout>
     )
   }
