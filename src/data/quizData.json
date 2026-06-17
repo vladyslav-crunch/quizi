@@ -1525,9 +1525,10 @@
           "Stratyfikacja wymaga, by ten sam przykład znalazł się w wielu foldach naraz.",
           "W regresji stratyfikacja zawsze rozdziela obserwacje według identycznych wartości ciągłych bez binowania.",
           "Stratyfikacja to wyłącznie technika Reinforcement Learning do doboru akcji.",
-          "Stratyfikacja polega na mieszaniu etykiet między foldami."
+          "Stratyfikacja polega na mieszaniu etykiet między foldami.",
+          "Wszystkie powyższe są fałszywe."
         ],
-        "answer": "Stratyfikacja polega na mieszaniu etykiet między foldami."
+        "answer": "Wszystkie powyższe są fałszywe."
       },
       {
         "question": "103) Co jest celem typowego procesu ML z punktu widzenia uogólniania?",
