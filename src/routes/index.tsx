@@ -1,7 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import type { ReactNode } from 'react'
 import ThemeToggle from '#/components/ThemeToggle'
-import { quizData } from '#/features/quiz/model'
 import { useQuizSession } from '#/features/quiz/useQuizSession'
 import { QuizSelectionView } from '#/features/quiz/components/QuizSelectionView'
 import { QuizEmptyState } from '#/features/quiz/components/QuizEmptyState'
@@ -46,7 +45,7 @@ function QuizLayout({
 
 function QuizApp() {
   const {
-    quizKeys,
+    quizOptions,
     selectedQuizKey,
     currentQuiz,
     currentQuestion,
@@ -74,8 +73,7 @@ function QuizApp() {
     return (
       <QuizLayout>
         <QuizSelectionView
-          quizKeys={quizKeys}
-          getQuizTitle={(quizKey) => quizData[quizKey].title}
+          quizOptions={quizOptions}
           onStartQuiz={startQuiz}
         />
       </QuizLayout>

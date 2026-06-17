@@ -15,8 +15,45 @@ const forceMultipleChoiceQuizTitles = [
   'Systemy Sztucznej Inteligencji - Zestaw 4',
 ]
 
+const random40QuizKey = 'random-40-from-si-sets'
+const random40QuizTitle = 'Systemy Sztucznej Inteligencji - 40 losowych pytań'
+
+export type SelectableQuizKey = QuizKey | typeof random40QuizKey
+
+type QuizOption = {
+  key: SelectableQuizKey
+  title: string
+}
+
+function getRandomQuestionsFromSet(quizTitle: (typeof forceMultipleChoiceQuizTitles)[number]) {
+  const questions = quizData[quizTitle].questions
+  const shuffledOrder = createShuffledOrder(questions.length)
+
+  return shuffledOrder
+    .slice(0, Math.min(10, questions.length))
+    .map((questionIndex) => questions[questionIndex])
+}
+
+function getRandomFortyQuestions() {
+  return forceMultipleChoiceQuizTitles.flatMap((quizTitle) =>
+    getRandomQuestionsFromSet(quizTitle),
+  )
+}
+
+function createQuizForKey(quizKey: SelectableQuizKey) {
+  if (quizKey === random40QuizKey) {
+    return {
+      title: random40QuizTitle,
+      questions: getRandomFortyQuestions(),
+    }
+  }
+
+  return quizData[quizKey]
+}
+
 export function useQuizSession() {
-  const [selectedQuizKey, setSelectedQuizKey] = useState<QuizKey | null>(null)
+  const [selectedQuizKey, setSelectedQuizKey] = useState<SelectableQuizKey | null>(null)
+  const [selectedQuiz, setSelectedQuiz] = useState<ReturnType<typeof createQuizForKey> | null>(null)
   const [currentIndex, setCurrentIndex] = useState(0)
   const [firstAttemptCorrectCount, setFirstAttemptCorrectCount] = useState(0)
   const [firstAttemptWrongCount, setFirstAttemptWrongCount] = useState(0)
@@ -30,11 +67,11 @@ export function useQuizSession() {
     setShuffledOptions(question ? createShuffledOptions(question.options) : [])
   }
 
-  const initializeQuizProgress = (quizKey: QuizKey) => {
-    const initialQuestionOrder = createShuffledOrder(
-      quizData[quizKey].questions.length,
-    )
+  const initializeQuizProgress = (quizKey: SelectableQuizKey) => {
+    const quiz = createQuizForKey(quizKey)
+    const initialQuestionOrder = createShuffledOrder(quiz.questions.length)
 
+    setSelectedQuiz(quiz)
     setCurrentIndex(0)
     setFirstAttemptCorrectCount(0)
     setFirstAttemptWrongCount(0)
@@ -42,10 +79,10 @@ export function useQuizSession() {
     setSelectedOptions([])
     setIsShowingFeedback(false)
     setQuestionOrder(initialQuestionOrder)
-    setOptionsForQuestion(quizData[quizKey].questions[initialQuestionOrder[0]])
+    setOptionsForQuestion(quiz.questions[initialQuestionOrder[0]])
   }
 
-  const startQuiz = (quizKey: QuizKey) => {
+  const startQuiz = (quizKey: SelectableQuizKey) => {
     setSelectedQuizKey(quizKey)
     initializeQuizProgress(quizKey)
   }
@@ -65,9 +102,10 @@ export function useQuizSession() {
     setQuestionOrder([])
     setShuffledOptions([])
     setSelectedQuizKey(null)
+    setSelectedQuiz(null)
   }
 
-  const currentQuiz = selectedQuizKey ? quizData[selectedQuizKey] : null
+  const currentQuiz = selectedQuiz
   const totalQuestions = currentQuiz?.questions.length ?? 0
   const activeQuestionIndex = questionOrder[currentIndex] ?? currentIndex
   const currentQuestion =
@@ -154,7 +192,16 @@ export function useQuizSession() {
   }
 
   return {
-    quizKeys: Object.keys(quizData) as QuizKey[],
+    quizOptions: [
+      ...Object.keys(quizData).map((quizKey) => ({
+        key: quizKey,
+        title: quizData[quizKey].title,
+      })),
+      {
+        key: random40QuizKey,
+        title: random40QuizTitle,
+      },
+    ] satisfies QuizOption[],
     selectedQuizKey,
     currentQuiz,
     currentQuestion,

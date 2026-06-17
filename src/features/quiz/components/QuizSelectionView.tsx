@@ -1,16 +1,17 @@
 import { Card, CardContent, CardHeader, CardTitle } from '#/components/ui/card'
 import { Button } from '#/components/ui/button'
-import type { QuizKey } from '#/features/quiz/model'
+import type { SelectableQuizKey } from '#/features/quiz/useQuizSession'
 
 type QuizSelectionViewProps = {
-  quizKeys: QuizKey[]
-  getQuizTitle: (quizKey: QuizKey) => string
-  onStartQuiz: (quizKey: QuizKey) => void
+  quizOptions: {
+    key: SelectableQuizKey
+    title: string
+  }[]
+  onStartQuiz: (quizKey: SelectableQuizKey) => void
 }
 
 export function QuizSelectionView({
-  quizKeys,
-  getQuizTitle,
+  quizOptions,
   onStartQuiz,
 }: QuizSelectionViewProps) {
   return (
@@ -20,14 +21,14 @@ export function QuizSelectionView({
           <CardTitle className="text-lg sm:text-xl">Select a Quiz</CardTitle>
         </CardHeader>
         <CardContent className="grid gap-3 sm:gap-4">
-          {quizKeys.map((quizKey) => (
+          {quizOptions.map((quizOption) => (
             <Button
-              key={quizKey}
+              key={quizOption.key}
               variant="outline"
-              className="h-auto w-full justify-start whitespace-normal break-words py-4 text-left text-base leading-snug"
-              onClick={() => onStartQuiz(quizKey)}
+              className="h-auto w-full justify-start whitespace-normal wrap-break-word py-4 text-left text-base leading-snug"
+              onClick={() => onStartQuiz(quizOption.key)}
             >
-              {getQuizTitle(quizKey)}
+              {quizOption.title}
             </Button>
           ))}
         </CardContent>
