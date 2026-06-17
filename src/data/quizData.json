@@ -1585,9 +1585,10 @@
           "FL nie wymaga żadnej komunikacji między serwerem a klientami.",
           "FL to to samo co Reinforcement Learning.",
           "W FL surowe dane wszystkich klientów są scalane na serwerze.",
-          "FL jest niemożliwy, gdy dane klientów mają różne rozkłady."
+          "FL jest niemożliwy, gdy dane klientów mają różne rozkłady.",
+          "Nie ma żadnych odpowiedzi prawdziwych."
         ],
-        "answer": "FL jest niemożliwy, gdy dane klientów mają różne rozkłady."
+        "answer": "Nie ma żadnych odpowiedzi poprawnych."
       },
       {
         "question": "107) Jak rozpoznać nadmierną wariancję modelu (high variance)?",
