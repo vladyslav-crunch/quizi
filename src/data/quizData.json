@@ -5230,12 +5230,6 @@
         "answer": "2 3 3 4 4 5"
       },
       {
-        "question": "Wynikiem cummax(c(2,3,-1,4,0,5)) w programie R jest",
-        "multipleAnswers": false,
-        "options": ["233345", "233445", "23 4 445", "5"],
-        "answer": "233445"
-      },
-      {
         "question": "Niech X będzie zmienną losową o rozkładzie Poissona ze średnią 3. Wówczas P(X = 4) obliczymy w R za pomocą",
         "multipleAnswers": false,
         "options": ["ppois(4,3)", "qpois(4,3)", "dpois (4,3)", "rpois(4,3)"],
@@ -5264,18 +5258,6 @@
           "losowości próby"
         ],
         "answer": "normalności rozkładu"
-      },
-      {
-        "question": "Błędem I-go rodzaju nazywamy sytuację, w której",
-        "multipleAnswers": false,
-        "imageUrl": "",
-        "options": [
-          "przyjmujemy hipotezę prawdziwą",
-          "odrzucamy hipotezę prawdziwą",
-          "przyjmujemy hipotezę fałszywą",
-          "odrzucamy hipotezę fałszywą"
-        ],
-        "answer": "odrzucamy hipotezę prawdziwą"
       },
       {
         "question": "Do zbadania tego, czy próbka ma charakter losowy najlepiej wykorzystać funkcję",
@@ -5314,13 +5296,6 @@
         "imageUrl": "",
         "options": ["var()", "var.test()", "bartlett.test()", "aov()"],
         "answer": "bartlett.test()"
-      },
-      {
-        "question": "Do zbadania niezależności statystycznej dwóch cech najlepiej wykorzystać funkcję",
-        "multipleAnswers": false,
-        "imageUrl": "",
-        "options": ["cor()", "cor.test()", "fisher.test()", "indep()"],
-        "answer": "fisher.test()"
       },
       {
         "question": "Współczynnik korelacji zmiennych losowych X i Y wynosi 0.4. Wynika stąd, że",
@@ -5396,12 +5371,6 @@
         "answer": ["dwóch średnich"]
       },
       {
-        "question": "Na wykresach ramkowych, czyli typu \"boxplot\", za wartości odstające uznaje się takie, których odległość od kwartyli wynosi co najmniej",
-        "multipleAnswers": false,
-        "options": ["1.5*IQR", "2*IQR", "2.5*IQR", "3*IQR"],
-        "answer": ["1.5*IQR"]
-      },
-      {
         "question": "Test serii można wykorzystać do weryfikacji hipotezy dotyczącej",
         "multipleAnswers": false,
         "options": [
@@ -5434,12 +5403,6 @@
         "multipleAnswers": false,
         "options": ["rnorm()", "dnorm()", "chisq.test()", "aov()"],
         "answer": ["chisq.test()"]
-      },
-      {
-        "question": "Rozkład Fishera-Snedecora to rozkład ilorazu dwóch niezależnych zmiennych losowych o rozkładzie",
-        "multipleAnswers": false,
-        "options": ["normalnym", "chi-kwadrat", "wykładniczym", "jednostajnym"],
-        "answer": ["chi-kwadrat"]
       },
       {
         "question": "W celu weryfikacji hipotezy dotyczącej równości średnich w dwóch populacjach wykorzystamy funkcję",
@@ -5612,18 +5575,6 @@
         "answer": "wilcox.test()"
       },
       {
-        "question": "W regresji liniowej jedną z miar dopasowania modelu do danych jest",
-        "multipleAnswers": false,
-        "imageUrl": "",
-        "options": [
-          "współczynnik korelacji",
-          "współczynnik determinacji",
-          "wartość dźwigni",
-          "kurtoza"
-        ],
-        "answer": "współczynnik determinacji"
-      },
-      {
         "question": "Współczynnik korelacji zmiennych losowych X i Y wynosi -1. Wynika stąd, że",
         "multipleAnswers": false,
         "imageUrl": "",
@@ -5650,24 +5601,11 @@
         "answer": "fisher.test()"
       },
       {
-        "question": "Chcemy zbadać, czy pewna cecha ma rozkład wykładniczy. Użyjemy w tym celu funkcji",
-        "multipleAnswers": false,
-        "imageUrl": "",
-        "options": ["rnorm()", "rexp()", "chisq.test()", "pexp()"],
-        "answer": "chisq.test()"
-      },
-      {
         "question": "Funkcję binom.test() można wykorzystać do weryfikacji hipotezy dotyczącej",
         "multipleAnswers": false,
         "imageUrl": "",
         "options": ["wariancji", "wskaźnika struktury", "średniej", "mediany"],
         "answer": "wskaźnika struktury"
-      },
-      {
-        "question": "Wynikiem pmax(c(4,0,6),c(3,2,7)) w programie R jest",
-        "multipleAnswers": false,
-        "options": ["6 7", "7 6", "7", "4 2 7"],
-        "answer": ["4 2 7"]
       },
       {
         "question": "Wynikiem cumsum(c(3,2,0,4,-1)) w programie R jest",
@@ -5682,32 +5620,10 @@
         "answer": ["listą"]
       },
       {
-        "question": "Za pomocą funkcji t.test() można zweryfikować hipotezę dotyczącą równości",
-        "multipleAnswers": false,
-        "options": [
-          "dwóch rozkładów",
-          "dwóch wariancji",
-          "dwóch średnich",
-          "dwóch proporcji"
-        ],
-        "answer": ["dwóch średnich"]
-      },
-      {
         "question": "Do zbadania tego, czy próbka ma charakter losowy najlepiej wykorzystać funkcję",
         "multipleAnswers": false,
         "options": ["ks.test()", "runs.test()", "cor()", "cor.test()"],
         "answer": ["runs.test()"]
-      },
-      {
-        "question": "Za pomocą funkcji wilcox.test() można zweryfikować hipotezę dotyczącą równości dwóch",
-        "multipleAnswers": false,
-        "options": [
-          "wariancji",
-          "median",
-          "kurtoz",
-          "współczynników asymetrii"
-        ],
-        "answer": ["median"]
       },
       {
         "question": "Błędem I-go rodzaju nazywamy sytuację, w której",
