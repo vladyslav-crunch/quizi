@@ -5213,5 +5213,456 @@
         "answer": ["obróbki danych pozyskanych w procesie skanowania"]
       }
     ]
+  },
+  "Planowanie i analiza eksperymentu": {
+    "title": "Planowanie i analiza eksperymentu",
+    "questions": [
+      {
+        "question": "Wynikiem pmax(c(4,0,6),c(3,2,7)) w programie R jest",
+        "multipleAnswers": false,
+        "options": ["6 7", "7 6", "7", "4 2 7"],
+        "answer": "4 2 7"
+      },
+      {
+        "question": "Wynikiem cummax(c(2,3,-1,4,0,5)) w programie R jest",
+        "multipleAnswers": false,
+        "options": ["2 3 3 3 4 5", "2 3 3 4 4 5", "2 3 4 4 4 5", "5"],
+        "answer": "2 3 3 4 4 5"
+      },
+      {
+        "question": "Wynikiem cummax(c(2,3,-1,4,0,5)) w programie R jest",
+        "multipleAnswers": false,
+        "options": ["233345", "233445", "23 4 445", "5"],
+        "answer": "233445"
+      },
+      {
+        "question": "Niech X będzie zmienną losową o rozkładzie Poissona ze średnią 3. Wówczas P(X = 4) obliczymy w R za pomocą",
+        "multipleAnswers": false,
+        "options": ["ppois(4,3)", "qpois(4,3)", "dpois (4,3)", "rpois(4,3)"],
+        "answer": "dpois (4,3)"
+      },
+      {
+        "question": "Za pomocą funkcji t.test() można zweryfikować hipotezę dotyczącą",
+        "multipleAnswers": false,
+        "options": ["kurtozy", "wariancji", "mediany", "średniej"],
+        "answer": "średniej"
+      },
+      {
+        "question": "Na wykresach ramkowych, czyli typu \"boxplot\", za wartości odstające uznaje się takie, których odległość od kwartyli wynosi co najmniej",
+        "multipleAnswers": false,
+        "options": ["1.5*IQR", "2*IQR", "2.5*IQR", "3*IQR"],
+        "answer": "1.5*IQR"
+      },
+      {
+        "question": "Test Shapiro-Wilka służy do weryfikacji hipotezy dotyczącej",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": [
+          "równości średnich",
+          "równości wariancji",
+          "normalności rozkładu",
+          "losowości próby"
+        ],
+        "answer": "normalności rozkładu"
+      },
+      {
+        "question": "Błędem I-go rodzaju nazywamy sytuację, w której",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": [
+          "przyjmujemy hipotezę prawdziwą",
+          "odrzucamy hipotezę prawdziwą",
+          "przyjmujemy hipotezę fałszywą",
+          "odrzucamy hipotezę fałszywą"
+        ],
+        "answer": "odrzucamy hipotezę prawdziwą"
+      },
+      {
+        "question": "Do zbadania tego, czy próbka ma charakter losowy najlepiej wykorzystać funkcję",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": [
+          "ks.test()",
+          "random()",
+          "bartlett.test()",
+          "bartels.rank.test()"
+        ],
+        "answer": "bartels.rank.test()"
+      },
+      {
+        "question": "Chcemy zbadać, czy pewna cecha ma rozkład wykładniczy. Użyjemy w tym celu funkcji",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": ["rnorm()", "rexp()", "chisq.test()", "pexp()"],
+        "answer": "chisq.test()"
+      },
+      {
+        "question": "Zmienne losowe X, Y są niezależne i mają rozkłady normalne. Ponadto, X ma średnią 6 i wariancję 10, a Y średnią 3 i wariancję 4. Zatem X-Y ma rozkład normalny o",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": [
+          "średniej 3 i wariancji 6",
+          "średniej 3 i wariancji 14",
+          "średniej 3 i wariancji 3",
+          "średniej 9 i wariancji 6"
+        ],
+        "answer": "średniej 3 i wariancji 14"
+      },
+      {
+        "question": "W celu weryfikacji hipotezy dotyczącej równości wariancji w trzech populacjach wykorzystamy funkcję",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": ["var()", "var.test()", "bartlett.test()", "aov()"],
+        "answer": "bartlett.test()"
+      },
+      {
+        "question": "Do zbadania niezależności statystycznej dwóch cech najlepiej wykorzystać funkcję",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": ["cor()", "cor.test()", "fisher.test()", "indep()"],
+        "answer": "fisher.test()"
+      },
+      {
+        "question": "Współczynnik korelacji zmiennych losowych X i Y wynosi 0.4. Wynika stąd, że",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": [
+          "X i Y są nieskorelowane",
+          "X i Y są niezależne",
+          "Y = 1+2X",
+          "Y = X^3"
+        ],
+        "answer": "Y = X^3"
+      },
+      {
+        "question": "W modelu regresji Y = B0 + B1*X + e estymator parametru B1, czyli b1, ma rozkład",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": ["normalny", "chi-kwadrat", "Fishera-Snedecora", "Studenta"],
+        "answer": "normalny"
+      },
+      {
+        "question": "Rozkład Fishera-Snedecora wykorzystywany jest do weryfikacji hipotezy dotyczącej równości",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": [
+          "dwóch rozkładów",
+          "dwóch median",
+          "dwóch wariancji",
+          "dwóch średnich"
+        ],
+        "answer": "dwóch wariancji"
+      },
+      {
+        "question": "Chcemy zbadać, czy pewna cecha ma rozkład normalny. Użyjemy w tym celu funkcji",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": ["pnorm()", "dnorm()", "aov()", "lillie.test()"],
+        "answer": "lillie.test()"
+      },
+      {
+        "question": "W celu weryfikacji hipotezy dotyczącej równości średnich w trzech populacjach wykorzystamy funkcję",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": ["aov()", "tsum.test()", "t.test()", "wilcox.test()"],
+        "answer": "aov()"
+      },
+      {
+        "question": "Wynikiem range(c(2,1,3,4,9)) w programie R jest",
+        "multipleAnswers": false,
+        "options": ["8", "9 1", "1 9", "-8"],
+        "answer": ["1 9"]
+      },
+      {
+        "question": "Niech X bedzie zmienną losową o rozkładzie normalnym ze średnią 10 i wariancją 9. Wówczas P(X ≤ 2) obliczymy w R za pomocą",
+        "multipleAnswers": false,
+        "options": [
+          "dnorm(2,10,3)",
+          "pnorm(2,10,3)",
+          "qnorm(2,10,3)",
+          "pnorm(2,10,9)"
+        ],
+        "answer": ["pnorm(2,10,3)"]
+      },
+      {
+        "question": "Za pomocą funkcji t.test() można zweryfikować hipotezę dotyczącą równości",
+        "multipleAnswers": false,
+        "options": [
+          "dwóch rozkładów",
+          "dwóch wariancji",
+          "dwóch średnich",
+          "dwóch proporcji"
+        ],
+        "answer": ["dwóch średnich"]
+      },
+      {
+        "question": "Na wykresach ramkowych, czyli typu \"boxplot\", za wartości odstające uznaje się takie, których odległość od kwartyli wynosi co najmniej",
+        "multipleAnswers": false,
+        "options": ["1.5*IQR", "2*IQR", "2.5*IQR", "3*IQR"],
+        "answer": ["1.5*IQR"]
+      },
+      {
+        "question": "Test serii można wykorzystać do weryfikacji hipotezy dotyczącej",
+        "multipleAnswers": false,
+        "options": [
+          "równości średnich",
+          "równości wariancji",
+          "równości rozkładów",
+          "równości proporcji"
+        ],
+        "answer": ["równości rozkładów"]
+      },
+      {
+        "question": "Mocą testu statystycznego nazywa się prawdopodobieństwo",
+        "multipleAnswers": false,
+        "options": [
+          "popełnienia błędu I rodzaju",
+          "nie popełnienia błędu I rodzaju",
+          "popełnienia błędu II rodzaju",
+          "nie popełnienia błędu II rodzaju"
+        ],
+        "answer": ["nie popełnienia błędu II rodzaju"]
+      },
+      {
+        "question": "Do zbadania tego, czy próbka ma charakter losowy najlepiej wykorzystać funkcje",
+        "multipleAnswers": false,
+        "options": ["ks.test()", "runs.test()", "cor()", "cor.test()"],
+        "answer": ["runs.test()"]
+      },
+      {
+        "question": "Chcemy zbadać, czy pewna cecha ma rozkład normalny. Użyjemy w tym celu funkcji",
+        "multipleAnswers": false,
+        "options": ["rnorm()", "dnorm()", "chisq.test()", "aov()"],
+        "answer": ["chisq.test()"]
+      },
+      {
+        "question": "Rozkład Fishera-Snedecora to rozkład ilorazu dwóch niezależnych zmiennych losowych o rozkładzie",
+        "multipleAnswers": false,
+        "options": ["normalnym", "chi-kwadrat", "wykładniczym", "jednostajnym"],
+        "answer": ["chi-kwadrat"]
+      },
+      {
+        "question": "W celu weryfikacji hipotezy dotyczącej równości średnich w dwóch populacjach wykorzystamy funkcję",
+        "multipleAnswers": false,
+        "options": ["mean()", "tsum.test()", "prop.test()", "var.test()"],
+        "answer": ["tsum.test()"]
+      },
+      {
+        "question": "Analiza wariancji dotyczy weryfikacji hipotezy o równości",
+        "multipleAnswers": false,
+        "options": ["średnich", "wariancji", "rozkładów", "median"],
+        "answer": ["średnich"]
+      },
+      {
+        "question": "Współczynnik korelacji zmiennych losowych X i Y wynosi 0.5. Wynika stąd, że",
+        "multipleAnswers": false,
+        "options": [
+          "X i Y są nieskorelowane",
+          "X i Y są niezależne",
+          "Y = 2X - 1",
+          "Y = X^2"
+        ],
+        "answer": ["Y = X^2"]
+      },
+      {
+        "question": "W regresji liniowej jedną z miar dopasowania modelu do danych jest",
+        "multipleAnswers": false,
+        "options": [
+          "współczynnik korelacji",
+          "współczynnik determinacji",
+          "wartość dźwigni",
+          "kurtoza"
+        ],
+        "answer": ["współczynnik determinacji"]
+      },
+      {
+        "question": "W prawie Benforda prawdopodobieństwo wystąpienia cyfry 7 na pierwszym miejscu znaczącym wynosi",
+        "multipleAnswers": false,
+        "options": [
+          "log10(7)",
+          "log_a(7)",
+          "log10(8) - log10(7)",
+          "log10(7) - log10(6)"
+        ],
+        "answer": ["log10(8) - log10(7)"]
+      },
+      {
+        "question": "Za pomocą funkcji SIGN.test() można zweryfikować hipotezę dotyczącą",
+        "multipleAnswers": false,
+        "options": ["kurtozy", "wariancji", "mediany", "średniej"],
+        "answer": ["mediany"]
+      },
+      {
+        "question": "W regresji liniowej zakłada się, że reszty (residuals) mają rozkład",
+        "multipleAnswers": false,
+        "options": ["Studenta", "normalny", "chi-kwadrat"],
+        "answer": ["normalny"]
+      },
+      {
+        "question": "Wynikiem rank(c(7,0,2,-1,3)) w programie R jest",
+        "multipleAnswers": false,
+        "options": ["4 1 3 2 5", "5 2 3 1 4", "5 2 3 4 1", "5 3 2 1 4"],
+        "answer": ["5 2 3 1 4"]
+      },
+      {
+        "question": "Wynikiem rank(c(-1,6,2,-3,0)) w programie R jest",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": ["2 5 4 1 3", "2 5 4 3 1", "1 2 3 4 5", "2 5 1 3 4"],
+        "answer": "2 5 4 1 3"
+      },
+      {
+        "question": "Wynikiem diff(c(3,2,0,4,-1)) w programie R jest",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": ["1 2 -4 5", "-1 -2 4 -5", "1 2 -4 5 -1", "-1 -2 4 -5 -1"],
+        "answer": "-1 -2 4 -5"
+      },
+      {
+        "question": "Wektor (X, Y) ma rozkład normalny o macierzy kowariancji M=rbind(c(4,1),c(1,1)). Współczynnik korelacji X i Y wynosi więc",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": ["0", "1", "0.5", "0.75"],
+        "answer": "0.5"
+      },
+      {
+        "question": "Za pomocą funkcji ks.test() można zweryfikować hipotezę dotyczącą równości",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": [
+          "dwóch rozkładów",
+          "dwóch wariancji",
+          "dwóch średnich",
+          "dwóch proporcji"
+        ],
+        "answer": "dwóch rozkładów"
+      },
+      {
+        "question": "Na wykresach pudełkowych, czyli typu \"boxplot\", zaznaczane są domyślnie",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": [
+          "mediana, średnia, Xmax, Xmin",
+          "mediana, średnia, Q1, Q2, Q3",
+          "mediana, Q1, Q3, Xmax, Xmin",
+          "średnia, Q1, Q3, Xmax, Xmin"
+        ],
+        "answer": "mediana, Q1, Q3, Xmax, Xmin"
+      },
+      {
+        "question": "Za pomocą funkcji wilcox.test() można zweryfikować hipotezę dotyczącą równości dwóch",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": [
+          "wariancji",
+          "median",
+          "kurtoz",
+          "współczynników asymetrii"
+        ],
+        "answer": "median"
+      },
+      {
+        "question": "Błędem II-go rodzaju nazywamy sytuację, w której",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": [
+          "przyjmujemy hipotezę prawdziwą",
+          "odrzucamy hipotezę prawdziwą",
+          "przyjmujemy hipotezę fałszywą",
+          "odrzucamy hipotezę fałszywą"
+        ],
+        "answer": "przyjmujemy hipotezę fałszywą"
+      },
+      {
+        "question": "Do zbadania tego, czy próbka ma charakter losowy najlepiej wykorzystać funkcję",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": [
+          "ks.test()",
+          "shapiro.test()",
+          "chisq.test()",
+          "turning.point.test()"
+        ],
+        "answer": "turning.point.test()"
+      },
+      {
+        "question": "Chcemy zbadać, czy pewna cecha ma rozkład normalny. Użyjemy w tym celu funkcji",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": ["rnorm()", "dnorm()", "chisq.test()", "qqnorm()"],
+        "answer": "chisq.test()"
+      },
+      {
+        "question": "Zmienna losowa X ma rozkład normalny o średniej 2 i wariancji 3. Zatem zmienna losowa Y = 1-X ma rozkład normalny o",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": [
+          "średniej -1 i wariancji 4",
+          "średniej -1 i wariancji 3",
+          "średniej 3 i wariancji 3",
+          "średniej -1 i wariancji -3"
+        ],
+        "answer": "średniej -1 i wariancji 3"
+      },
+      {
+        "question": "W celu weryfikacji hipotezy dotyczącej równości średnich w dwóch populacjach wykorzystamy funkcję",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": ["mean()", "wilcox.test()", "prop.test()", "var.test()"],
+        "answer": "wilcox.test()"
+      },
+      {
+        "question": "W regresji liniowej jedną z miar dopasowania modelu do danych jest",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": [
+          "współczynnik korelacji",
+          "współczynnik determinacji",
+          "wartość dźwigni",
+          "kurtoza"
+        ],
+        "answer": "współczynnik determinacji"
+      },
+      {
+        "question": "Współczynnik korelacji zmiennych losowych X i Y wynosi -1. Wynika stąd, że",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": [
+          "X i Y są nieskorelowane",
+          "X i Y są niezależne",
+          "Y = −2X+1",
+          "Y = X^3"
+        ],
+        "answer": "Y = −2X+1"
+      },
+      {
+        "question": "Rozkład Fishera-Snedecora to rozkład ilorazu dwóch niezależnych zmiennych losowych o rozkładzie",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": ["normalnym", "chi-kwadrat", "wykładniczym", "jednostajnym"],
+        "answer": "chi-kwadrat"
+      },
+      {
+        "question": "Do zbadania niezależności statystycznej dwóch cech najlepiej wykorzystać funkcję",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": ["cor()", "cor.test()", "fisher.test()", "indep()"],
+        "answer": "fisher.test()"
+      },
+      {
+        "question": "Chcemy zbadać, czy pewna cecha ma rozkład wykładniczy. Użyjemy w tym celu funkcji",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": ["rnorm()", "rexp()", "chisq.test()", "pexp()"],
+        "answer": "chisq.test()"
+      },
+      {
+        "question": "Funkcję binom.test() można wykorzystać do weryfikacji hipotezy dotyczącej",
+        "multipleAnswers": false,
+        "imageUrl": "",
+        "options": ["wariancji", "wskaźnika struktury", "średniej", "mediany"],
+        "answer": "wskaźnika struktury"
+      }
+    ]
   }
 }
