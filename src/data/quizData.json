@@ -5662,6 +5662,128 @@
         "imageUrl": "",
         "options": ["wariancji", "wskaźnika struktury", "średniej", "mediany"],
         "answer": "wskaźnika struktury"
+      },
+      {
+        "question": "Wynikiem pmax(c(4,0,6),c(3,2,7)) w programie R jest",
+        "multipleAnswers": false,
+        "options": ["6 7", "7 6", "7", "4 2 7"],
+        "answer": ["4 2 7"]
+      },
+      {
+        "question": "Wynikiem cumsum(c(3,2,0,4,-1)) w programie R jest",
+        "multipleAnswers": false,
+        "options": ["3 3 5 5 9 8", "3 5 5 9 8", "8", "3 8"],
+        "answer": ["3 3 5 5 9 8"]
+      },
+      {
+        "question": "W programie R tworzymy obiekt h=hist(c(1,1,2,3,5,8)). Obiekt ten jest",
+        "multipleAnswers": false,
+        "options": ["wektorem", "listą", "tablicą", "ramką danych"],
+        "answer": ["listą"]
+      },
+      {
+        "question": "Za pomocą funkcji t.test() można zweryfikować hipotezę dotyczącą równości",
+        "multipleAnswers": false,
+        "options": [
+          "dwóch rozkładów",
+          "dwóch wariancji",
+          "dwóch średnich",
+          "dwóch proporcji"
+        ],
+        "answer": ["dwóch średnich"]
+      },
+      {
+        "question": "Do zbadania tego, czy próbka ma charakter losowy najlepiej wykorzystać funkcję",
+        "multipleAnswers": false,
+        "options": ["ks.test()", "runs.test()", "cor()", "cor.test()"],
+        "answer": ["runs.test()"]
+      },
+      {
+        "question": "Za pomocą funkcji wilcox.test() można zweryfikować hipotezę dotyczącą równości dwóch",
+        "multipleAnswers": false,
+        "options": [
+          "wariancji",
+          "median",
+          "kurtoz",
+          "współczynników asymetrii"
+        ],
+        "answer": ["median"]
+      },
+      {
+        "question": "Błędem I-go rodzaju nazywamy sytuację, w której",
+        "multipleAnswers": false,
+        "options": [
+          "przyjmujemy hipotezę prawdziwą",
+          "odrzucamy hipotezę prawdziwą",
+          "przyjmujemy hipotezę fałszywą",
+          "odrzucamy hipotezę fałszywą"
+        ],
+        "answer": ["odrzucamy hipotezę prawdziwą"]
+      },
+      {
+        "question": "W celu weryfikacji hipotezy dotyczącej równości wariancji w dwóch populacjach wykorzystamy funkcję",
+        "multipleAnswers": false,
+        "options": ["var()", "levene.test()", "lm()", "aov()"],
+        "answer": ["levene.test()"]
+      },
+      {
+        "question": "Chcemy zbadać, czy współczynnik korelacji dwóch cech jest istotnie różny od zera. Użyjemy w tym celu funkcji",
+        "multipleAnswers": false,
+        "options": ["cor()", "skewness()", "cor.test()", "HZ.test()"],
+        "answer": ["cor.test()"]
+      },
+      {
+        "question": "Wektor (X, Y) ma rozkład normalny o macierzy kowariancji M=rbind(c(9,1),c(1,4)). Współczynnik korelacji X i Y wynosi więc",
+        "multipleAnswers": false,
+        "options": ["0.16", "0.33", "0.5", "1"],
+        "answer": ["0.16"]
+      },
+      {
+        "question": "W celu weryfikacji hipotezy dotyczącej równości średnich w dwóch populacjach wykorzystamy funkcję",
+        "multipleAnswers": false,
+        "options": ["mean()", "zsum.test()", "prop.test()", "var.test()"],
+        "answer": ["zsum.test()"]
+      },
+      {
+        "question": "W analysie wariancji zakłada się, że badana cecha ma w populacjach rozkład",
+        "multipleAnswers": false,
+        "options": ["Studenta", "normalny", "chi-kwadrat", "Fishera-Snedecora"],
+        "answer": ["normalny"]
+      },
+      {
+        "question": "Chcemy zbadać, czy pewna cecha ma rozkład wykładniczy. Użyjemy w tym celu funkcji",
+        "multipleAnswers": false,
+        "options": ["rnorm()", "rexp()", "ks.test()", "pexp()"],
+        "answer": ["ks.test()"]
+      },
+      {
+        "question": "Miara skośności Bowley'a próbki losowej: 6,8,0,4,16,-1,18 wynosi",
+        "multipleAnswers": false,
+        "options": ["0.4", "0", "0.2", "0.3"],
+        "answer": ["0.2"]
+      },
+      {
+        "question": "Wariancja zmiennej losowej X o rozkładzie chi-kwadrat wynosi 20. Zatem X ma rozkład chi-kwadrat o",
+        "multipleAnswers": false,
+        "options": [
+          "20 stopniach swobody",
+          "16 stopniach swobody",
+          "10 stopniach swobody",
+          "4 stopniach swobody"
+        ],
+        "answer": ["10 stopniach swobody"]
+      },
+      {
+        "question": "Za pomocą funkcji prop.test() można zweryfikować hipotezę dotyczącą",
+        "multipleAnswers": false,
+        "options": ["kurtozy", "wskaźnika struktury", "mediany", "średniej"],
+        "answer": ["wskaźnika struktury"]
+      },
+      {
+        "question": "Jeśli hipoteza zerowa jest prawdziwa, to rozkład p-wartości, związany z tą hipotezą, jest",
+        "multipleAnswers": false,
+        "options": ["wykładniczy", "normalny", "jednostajny"],
+        "answer": ["jednostajny"]
       }
     ]
   }
