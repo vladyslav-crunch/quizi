@@ -5611,7 +5611,7 @@
         "question": "Wynikiem cumsum(c(3,2,0,4,-1)) w programie R jest",
         "multipleAnswers": false,
         "options": ["3 3 5 5 9 8", "3 5 5 9 8", "8", "3 8"],
-        "answer": ["3 3 5 5 9 8"]
+        "answer": ["3 5 5 9 8"]
       },
       {
         "question": "W programie R tworzymy obiekt h=hist(c(1,1,2,3,5,8)). Obiekt ten jest",
