@@ -23,6 +23,7 @@ export type SelectableQuizKey = QuizKey | typeof random40QuizKey
 type QuizOption = {
   key: SelectableQuizKey
   title: string
+  questionCount: number
 }
 
 function getRandomQuestionsFromSet(
@@ -201,10 +202,12 @@ export function useQuizSession() {
       ...Object.keys(quizData).map((quizKey) => ({
         key: quizKey,
         title: quizData[quizKey].title,
+        questionCount: quizData[quizKey].questions.length,
       })),
       {
         key: random40QuizKey,
         title: random40QuizTitle,
+        questionCount: 40,
       },
     ] satisfies QuizOption[],
     selectedQuizKey,
