@@ -83,13 +83,14 @@ export function QuizQuestionView({
             const isCorrect = correctAnswers.includes(option)
 
             let buttonClassName =
-              'h-auto min-h-14 justify-start border-2 px-4 py-3 text-left transition-all sm:px-6 sm:py-4 '
+              'h-auto min-h-14 cursor-pointer justify-start border-2 px-4 py-3 text-left transition-all hover:border-primary/50 hover:shadow-sm dark:hover:border-primary dark:hover:bg-primary/15 sm:px-6 sm:py-4 '
 
             if (isShowingFeedback) {
               if (isCorrect) buttonClassName += 'border-green-500 bg-green-50'
               else if (isSelected) buttonClassName += 'border-red-500 bg-red-50'
             } else if (isSelected) {
-              buttonClassName += 'border-primary bg-primary/5'
+              buttonClassName +=
+                'border-primary bg-primary/5 hover:bg-primary/10 dark:hover:bg-primary/25'
             }
 
             return (
