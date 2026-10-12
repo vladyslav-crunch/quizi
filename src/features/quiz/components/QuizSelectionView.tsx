@@ -31,6 +31,14 @@ export function QuizSelectionView({
               {quizOption.title}
             </Button>
           ))}
+          <Button
+            type="button"
+            variant="default"
+            className="w-full"
+            onClick={() => window.open('https://www.notion.so', '_blank', 'noopener,noreferrer')}
+          >
+            Study Notes
+          </Button>
         </CardContent>
       </Card>
     </div>
