@@ -18,7 +18,7 @@ export function QuizSelectionView({
     <div className="flex min-h-svh items-center justify-center bg-background p-3 text-foreground sm:p-4">
       <Card className="w-full max-w-md shadow-lg">
         <CardHeader>
-          <CardTitle className="text-lg sm:text-xl">Select a Quiz</CardTitle>
+          <CardTitle className="text-lg sm:text-xl">Choose a Quiz</CardTitle>
         </CardHeader>
         <CardContent className="grid gap-3 sm:gap-4">
           {quizOptions.map((quizOption) => (
