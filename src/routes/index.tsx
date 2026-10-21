@@ -39,6 +39,9 @@ function QuizLayout({
         <ThemeToggle />
       </div>
       {children}
+      <p className="pointer-events-none fixed inset-x-0 bottom-3 z-10 text-center text-[11px] text-muted-foreground sm:bottom-5 sm:text-xs">
+        QA single-repo test
+      </p>
     </div>
   )
 }
