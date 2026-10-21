@@ -17,7 +17,7 @@ export function QuizSelectionView({
   return (
     <div className="flex min-h-svh flex-col items-center justify-center gap-3 bg-background p-3 text-foreground sm:p-4">
       <p className="text-[11px] text-muted-foreground sm:text-xs">
-        QA regression (flags off)
+        QA regression (flags off) v2
       </p>
       <Card className="w-full max-w-md shadow-lg">
         <CardHeader>
